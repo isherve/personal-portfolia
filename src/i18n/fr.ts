@@ -290,6 +290,16 @@ export const fr: PortfolioContent = {
       status: "Featured",
     },
     {
+      repo: "Hardware-Operations-Inventory-Management-System",
+      title: "Bettina Hardware — Inventaire & Opérations",
+      organization: "Personal",
+      description:
+        "Plateforme full-stack de gestion de quincaillerie avec React et Spring Boot — inventaire, ventes, clients, employés, finances, RBAC, alertes de stock bas et rapports CSV/PDF.",
+      impact:
+        "Remplace les registres manuels par des workflows retail automatisés pour une vraie quincaillerie à Kigali, Rwanda.",
+      status: "Featured",
+    },
+    {
       repo: "improved-property-management-system-with-ui-dynamo-team",
       title: "Système de gestion immobilière",
       organization: "Pelino-Courses",

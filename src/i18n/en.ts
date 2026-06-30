@@ -290,6 +290,16 @@ export const en: PortfolioContent = {
       status: "Featured",
     },
     {
+      repo: "Hardware-Operations-Inventory-Management-System",
+      title: "Bettina Hardware — Inventory & Operations System",
+      organization: "Personal",
+      description:
+        "Full-stack hardware store management platform with React and Spring Boot — inventory, sales, customers, employees, financials, RBAC, low-stock alerts, and CSV/PDF reporting.",
+      impact:
+        "Replaces manual ledgers with automated retail workflows for a real hardware business in Kigali, Rwanda.",
+      status: "Featured",
+    },
+    {
       repo: "improved-property-management-system-with-ui-dynamo-team",
       title: "Property Management System",
       organization: "Pelino-Courses",

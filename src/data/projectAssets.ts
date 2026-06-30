@@ -24,6 +24,12 @@ export const projectAssets = [
     githubUrl: personalRepo("-IT-Support-Analytics-Dashboard"),
   },
   {
+    repo: "Hardware-Operations-Inventory-Management-System",
+    image: projectImage("property-management.jpg"),
+    technologies: ["React", "TypeScript", "Spring Boot", "Java", "PostgreSQL", "JWT", "TanStack Query"],
+    githubUrl: personalRepo("Hardware-Operations-Inventory-Management-System"),
+  },
+  {
     repo: "improved-property-management-system-with-ui-dynamo-team",
     image: projectImage("property-ui-real.jpg"),
     technologies: ["Django", "Python", "HTML", "CSS", "PostgreSQL", "REST API"],
