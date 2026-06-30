@@ -280,6 +280,16 @@ export const en: PortfolioContent = {
       status: "Featured",
     },
     {
+      repo: "-IT-Support-Analytics-Dashboard",
+      title: "IT Support & Analytics Dashboard",
+      organization: "Personal",
+      description:
+        "Production-quality React dashboard for IT support tickets, system health metrics, and data workflows — with role-based access, KPI charts, Supabase backend, and a dark mobile-first UI.",
+      impact:
+        "Turns support and infrastructure data into actionable insights for IT operations teams — directly aligned with Ministry of Health internship experience.",
+      status: "Featured",
+    },
+    {
       repo: "improved-property-management-system-with-ui-dynamo-team",
       title: "Property Management System",
       organization: "Pelino-Courses",
@@ -337,16 +347,6 @@ export const en: PortfolioContent = {
         "Flutter codelab project implementing Material Design components — navigation patterns, theming, and interactive UI widgets across multiple lab modules.",
       impact:
         "Demonstrates mobile UI fundamentals and Material Design best practices in a structured Flutter learning path.",
-      status: "Completed",
-    },
-    {
-      repo: "-IT-Support-Analytics-Dashboard",
-      title: "IT Support Analytics Dashboard",
-      organization: "Personal",
-      description:
-        "React dashboard for visualizing IT support metrics, system health data, and operational workflows — aligned with hands-on Ministry of Health IT experience.",
-      impact:
-        "Turns support and system data into actionable insights for IT operations teams.",
       status: "Completed",
     },
     {

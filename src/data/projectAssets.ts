@@ -18,6 +18,12 @@ export const projectAssets = [
     githubUrl: personalRepo("smart-flow-prepaid"),
   },
   {
+    repo: "-IT-Support-Analytics-Dashboard",
+    image: projectImage("it-dashboard.jpg"),
+    technologies: ["React", "TypeScript", "Supabase", "Zustand", "Recharts", "Tailwind CSS", "Vite"],
+    githubUrl: personalRepo("-IT-Support-Analytics-Dashboard"),
+  },
+  {
     repo: "improved-property-management-system-with-ui-dynamo-team",
     image: projectImage("property-ui-real.jpg"),
     technologies: ["Django", "Python", "HTML", "CSS", "PostgreSQL", "REST API"],
@@ -52,12 +58,6 @@ export const projectAssets = [
     image: projectImage("flutter-material.jpg"),
     technologies: ["Flutter", "Dart", "Material Design", "Mobile UI"],
     githubUrl: orgRepo("material-comonents-codelabs"),
-  },
-  {
-    repo: "-IT-Support-Analytics-Dashboard",
-    image: projectImage("it-dashboard.jpg"),
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Recharts"],
-    githubUrl: personalRepo("-IT-Support-Analytics-Dashboard"),
   },
   {
     repo: "Qr-code-webapp",

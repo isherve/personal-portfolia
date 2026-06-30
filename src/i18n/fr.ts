@@ -280,6 +280,16 @@ export const fr: PortfolioContent = {
       status: "Featured",
     },
     {
+      repo: "-IT-Support-Analytics-Dashboard",
+      title: "Tableau de bord Support IT & Analytics",
+      organization: "Personal",
+      description:
+        "Tableau de bord React de qualité production pour tickets de support IT, métriques de santé système et workflows de données — avec accès par rôles, graphiques KPI, backend Supabase et interface sombre mobile-first.",
+      impact:
+        "Transforme les données de support et d'infrastructure en informations exploitables pour les équipes IT — aligné sur l'expérience au Ministère de la Santé.",
+      status: "Featured",
+    },
+    {
       repo: "improved-property-management-system-with-ui-dynamo-team",
       title: "Système de gestion immobilière",
       organization: "Pelino-Courses",
@@ -337,16 +347,6 @@ export const fr: PortfolioContent = {
         "Projet codelab Flutter implémentant les composants Material Design — navigation, thèmes et widgets interactifs sur plusieurs modules.",
       impact:
         "Démontre les fondamentaux UI mobile et les bonnes pratiques Material Design dans un parcours Flutter structuré.",
-      status: "Completed",
-    },
-    {
-      repo: "-IT-Support-Analytics-Dashboard",
-      title: "Tableau de bord analytique Support IT",
-      organization: "Personal",
-      description:
-        "Tableau de bord React pour visualiser les métriques de support IT, la santé des systèmes et les workflows opérationnels — aligné sur l'expérience au Ministère de la Santé.",
-      impact:
-        "Transforme les données de support et système en informations exploitables pour les équipes IT.",
       status: "Completed",
     },
     {
