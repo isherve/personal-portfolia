@@ -1,45 +1,70 @@
 
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { personal } from "@/data/portfolio";
+import { Briefcase, GraduationCap, MapPin } from "lucide-react";
+import ProfileAvatar from "@/components/ProfileAvatar";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+const iconMap = {
+  education: GraduationCap,
+  experience: Briefcase,
+  location: MapPin,
+} as const;
 
 const About = () => {
+  const { content } = useLanguage();
+  const { about, highlightLabels } = content.ui;
+  const { aboutContent } = content;
+
   return (
-    <section id="about" className="bg-card/30 py-16">
+    <section id="about" className="bg-card/30">
       <div className="section-container">
-        <h2 className="heading">About Me</h2>
-        <div className="flex flex-col md:flex-row gap-10 items-center">
-          <div className="w-full md:w-1/3 flex justify-center">
-            <Avatar className="w-64 h-64 border-4 border-primary">
-              <AvatarImage src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=2048&auto=format&fit=crop" alt="Profile" />
-              <AvatarFallback className="text-4xl">YN</AvatarFallback>
-            </Avatar>
+        <h2 className="heading">{about.title}</h2>
+        <p className="subheading">{about.subtitle}</p>
+
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
+          <div className="w-full lg:w-auto flex justify-center lg:sticky lg:top-28 shrink-0">
+            <ProfileAvatar size="lg" />
           </div>
-          <div className="w-full md:w-2/3">
-            <h3 className="text-2xl font-bold mb-4">Frontend Developer & UI Designer</h3>
-            <p className="text-secondary mb-6">
-              I'm a passionate web developer with expertise in creating responsive and dynamic web applications. 
-              With a background in both design and development, I bridge the gap between aesthetics and functionality.
-            </p>
-            <p className="text-secondary mb-6">
-              I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding or 
-              pushing pixels, you'll find me exploring new technologies or working on side projects.
-            </p>
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <h4 className="font-medium text-primary">Location</h4>
-                <p className="text-secondary">Kigali , RWANDA</p>
-              </div>
-              <div>
-                <h4 className="font-medium text-primary">Freelance</h4>
-                <p className="text-secondary">Available</p>
-              </div>
-              <div>
-                <h4 className="font-medium text-primary">Email</h4>
-                <p className="text-secondary">ishimwehervin10@gmail.com</p>
-              </div>
-              <div>
-                <h4 className="font-medium text-primary">Education</h4>
-                <p className="text-secondary">Information Technology, University of Rwanda</p>
-              </div>
+
+          <div className="w-full lg:flex-1 min-w-0">
+            <h3 className="text-xl sm:text-2xl font-bold mb-5 tracking-tight">{aboutContent.headline}</h3>
+
+            {aboutContent.paragraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 40)} className="text-secondary text-[15px] sm:text-base mb-5 leading-[1.75]">
+                {paragraph}
+              </p>
+            ))}
+
+            <div className="grid sm:grid-cols-3 gap-4 mb-8">
+              {aboutContent.highlights.map(({ key, value, detail }) => {
+                const Icon = iconMap[key];
+                return (
+                  <div key={key} className="bg-card border border-border rounded-lg p-4 card-hover">
+                    <Icon className="text-primary mb-2" size={20} />
+                    <p className="text-xs text-secondary uppercase tracking-wide mb-1">
+                      {highlightLabels[key]}
+                    </p>
+                    <p className="font-semibold text-sm mb-1">{value}</p>
+                    <p className="text-secondary text-xs">{detail}</p>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={`mailto:${personal.email}`}
+                className="inline-flex items-center text-sm text-primary hover:underline"
+              >
+                {personal.email}
+              </a>
+              <span className="text-border">·</span>
+              <a
+                href={`tel:${personal.phone.replace(/\s/g, "")}`}
+                className="inline-flex items-center text-sm text-primary hover:underline"
+              >
+                {personal.phone}
+              </a>
             </div>
           </div>
         </div>

@@ -1,33 +1,37 @@
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github } from "lucide-react";
+import { social } from "@/data/portfolio";
+import { useLanguage } from "@/contexts/LanguageContext";
+import ThemeToggle from "@/components/ThemeToggle";
+import LanguageToggle from "@/components/LanguageToggle";
+import CvDownloadButton from "@/components/CvDownloadButton";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { content } = useLanguage();
+  const { nav, hero } = content.ui;
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     setIsMenuOpen(false);
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const navItems = [
+    { id: "home", label: nav.home },
+    { id: "about", label: nav.about },
+    { id: "skills", label: nav.skills },
+    { id: "certificates", label: nav.certificates },
+    { id: "projects", label: nav.projects },
+    { id: "contact", label: nav.contact },
+  ];
 
   return (
     <header
@@ -35,36 +39,84 @@ const Header = () => {
         scrolled ? "bg-background/90 backdrop-blur-md shadow-md py-3" : "py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-primary">Portfolio</a>
-        
-        {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-foreground hover:text-primary transition-colors"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 flex justify-between items-center gap-4">
+        <button
+          onClick={() => scrollToSection("home")}
+          className="flex items-center gap-2.5 hover:opacity-90 transition-opacity shrink-0"
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-base">
+            H
+          </span>
+          <span className="hidden sm:inline text-base font-semibold text-foreground tracking-tight">
+            Hervin <span className="text-primary">ISHIMWE</span>
+          </span>
         </button>
-        
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-1">
-          <button onClick={() => scrollToSection("home")} className="nav-link">Home</button>
-          <button onClick={() => scrollToSection("about")} className="nav-link">About</button>
-          <button onClick={() => scrollToSection("skills")} className="nav-link">Skills</button>
-          <button onClick={() => scrollToSection("projects")} className="nav-link">Projects</button>
-          <button onClick={() => scrollToSection("contact")} className="nav-link">Contact</button>
+
+        <nav className="hidden lg:flex items-center gap-1 flex-1 justify-center">
+          {navItems.map(({ id, label }) => (
+            <button key={id} onClick={() => scrollToSection(id)} className="nav-link">
+              {label}
+            </button>
+          ))}
         </nav>
+
+        <div className="flex items-center gap-1.5 shrink-0">
+          <CvDownloadButton
+            variant="outline"
+            size="sm"
+            label={hero.downloadCv}
+            className="hidden md:inline-flex h-9 border-primary/60 text-foreground hover:bg-primary/10 text-xs font-medium"
+          />
+          <CvDownloadButton
+            variant="ghost"
+            size="sm"
+            showIcon
+            label=""
+            className="md:hidden h-9 w-9 px-0 text-secondary hover:text-primary"
+            aria-label={hero.downloadCv}
+            title={hero.downloadCv}
+          />
+          <LanguageToggle />
+          <ThemeToggle />
+          <a
+            href={social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex ml-1 text-secondary hover:text-primary transition-colors p-2"
+            aria-label="GitHub"
+          >
+            <Github size={20} />
+          </a>
+          <button
+            className="lg:hidden text-foreground hover:text-primary transition-colors p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Menu"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
-      
-      {/* Mobile Menu */}
+
       {isMenuOpen && (
-        <div className="md:hidden bg-card/95 backdrop-blur-md absolute top-full left-0 w-full shadow-lg animate-fade-in">
-          <nav className="flex flex-col p-4 space-y-3">
-            <button onClick={() => scrollToSection("home")} className="nav-link text-left">Home</button>
-            <button onClick={() => scrollToSection("about")} className="nav-link text-left">About</button>
-            <button onClick={() => scrollToSection("skills")} className="nav-link text-left">Skills</button>
-            <button onClick={() => scrollToSection("projects")} className="nav-link text-left">Projects</button>
-            <button onClick={() => scrollToSection("contact")} className="nav-link text-left">Contact</button>
+        <div className="lg:hidden bg-card/95 backdrop-blur-md border-b border-border shadow-lg animate-fade-in">
+          <div className="flex items-center justify-between px-4 pt-3">
+            <CvDownloadButton
+              variant="outline"
+              size="sm"
+              label={hero.downloadCv}
+              className="border-primary text-primary hover:bg-primary/10"
+            />
+            <div className="flex items-center gap-1">
+              <LanguageToggle />
+              <ThemeToggle />
+            </div>
+          </div>
+          <nav className="flex flex-col p-4 pt-2 space-y-3">
+            {navItems.map(({ id, label }) => (
+              <button key={id} onClick={() => scrollToSection(id)} className="nav-link text-left">
+                {label}
+              </button>
+            ))}
           </nav>
         </div>
       )}

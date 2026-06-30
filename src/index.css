@@ -3,10 +3,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700;800&display=swap');
-
 @layer base {
   :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 210 20% 98%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 172 66% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 16% 47%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 172 66% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 172 66% 38%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
     --background: 225 32% 11%;
     --foreground: 210 40% 98%;
 
@@ -34,35 +64,36 @@
     --border: 228 16% 24%;
     --input: 228 16% 24%;
     --ring: 171 100% 70%;
-
-    --radius: 0.5rem;
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
-    font-family: 'Poppins', sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.65;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    @apply tracking-tight;
   }
 }
 
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24;
+    @apply max-w-6xl mx-auto px-5 sm:px-8 py-20 md:py-24 lg:py-28;
   }
   
   .heading {
-    @apply text-3xl md:text-4xl font-bold mb-6;
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-4 tracking-tight;
   }
   
   .subheading {
-    @apply text-lg md:text-xl text-secondary mb-12 max-w-2xl;
+    @apply text-base md:text-lg text-secondary mb-10 md:mb-12 max-w-2xl leading-relaxed;
   }
 
   .nav-link {
-    @apply relative px-3 py-2 text-foreground hover:text-primary transition-colors duration-300;
+    @apply relative px-3 py-2 text-sm font-medium text-foreground/90 hover:text-primary transition-colors duration-300;
   }
   
   .nav-link:after {
@@ -91,5 +122,33 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Resume print styles (hidden source — used when browser print is triggered) */
+@media print {
+  body {
+    background: white !important;
+    color: #1a1a2e !important;
+  }
+
+  header,
+  footer,
+  main {
+    display: none !important;
+  }
+
+  #resume-print-source {
+    position: static !important;
+    left: auto !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  #resume-document,
+  .resume-paper {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    max-width: 100% !important;
   }
 }

@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
+!.env.example
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +25,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local image processing sources (keep hervin-profile.png + hervin-original.png)
+public/profile/hervin-profile-raw.png
+public/profile/hervin-profile-source.png

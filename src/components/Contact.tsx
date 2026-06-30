@@ -1,61 +1,73 @@
-
-import { useState } from 'react';
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, User } from "lucide-react";
+import { personal } from "@/data/portfolio";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
+  const { content } = useLanguage();
+  const { contact: ui } = content.ui;
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
-  
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${personal.email}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `[Portfolio] ${formData.subject}`,
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) throw new Error("Failed");
+
+      toast({ title: ui.successTitle, description: ui.successDesc });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch {
       toast({
-        title: "Message Sent!",
-        description: "Thank you for your message. I'll get back to you soon!",
+        title: ui.errorTitle,
+        description: ui.errorDesc.replace("{email}", personal.email),
+        variant: "destructive",
       });
-      
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
     <section id="contact" className="py-16">
       <div className="section-container">
-        <h2 className="heading">Get In Touch</h2>
-        <p className="subheading">
-          Have a project in mind or just want to chat? Feel free to reach out.
-          I'd love to hear from you!
-        </p>
+        <h2 className="heading">{ui.title}</h2>
+        <p className="subheading">{ui.subtitle}</p>
 
         <div className="grid md:grid-cols-3 gap-10">
           <Card className="bg-card border-border">
@@ -63,37 +75,59 @@ const Contact = () => {
               <div className="bg-primary/10 p-4 rounded-full mb-4">
                 <Mail className="text-primary" size={24} />
               </div>
-              <h3 className="font-bold text-lg mb-2">Email</h3>
-              <p className="text-secondary mb-2">For general inquiries</p>
-              <a href="mailto:hello@example.com" className="text-primary hover:underline">
-                hello@example.com
+              <h3 className="font-bold text-lg mb-2">{ui.email}</h3>
+              <p className="text-secondary mb-2">{ui.emailHint}</p>
+              <a href={`mailto:${personal.email}`} className="text-primary hover:underline">
+                {personal.email}
               </a>
             </CardContent>
           </Card>
-          
+
           <Card className="bg-card border-border">
             <CardContent className="flex flex-col items-center text-center p-6">
               <div className="bg-primary/10 p-4 rounded-full mb-4">
                 <Phone className="text-primary" size={24} />
               </div>
-              <h3 className="font-bold text-lg mb-2">Phone</h3>
-              <p className="text-secondary mb-2">Mon-Fri from 9am to 5pm</p>
-              <a href="tel:+11234567890" className="text-primary hover:underline">
-                +250781011343
+              <h3 className="font-bold text-lg mb-2">{ui.phone}</h3>
+              <p className="text-secondary mb-2">{ui.phoneHint}</p>
+              <a href={`tel:${personal.phone.replace(/\s/g, "")}`} className="text-primary hover:underline">
+                {personal.phone}
               </a>
             </CardContent>
           </Card>
-          
+
           <Card className="bg-card border-border">
             <CardContent className="flex flex-col items-center text-center p-6">
               <div className="bg-primary/10 p-4 rounded-full mb-4">
                 <MapPin className="text-primary" size={24} />
               </div>
-              <h3 className="font-bold text-lg mb-2">Location</h3>
-              <p className="text-secondary mb-2">Available for remote work</p>
-              <span className="text-primary">Kigali, RWANDA</span>
+              <h3 className="font-bold text-lg mb-2">{ui.location}</h3>
+              <p className="text-secondary mb-2">{ui.locationHint}</p>
+              <span className="text-primary">{personal.location}</span>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="mt-16">
+          <h3 className="text-xl font-bold mb-6">{ui.references}</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {content.references.map((ref) => (
+              <Card key={ref.name} className="bg-card border-border">
+                <CardContent className="flex items-start gap-4 p-6">
+                  <div className="bg-primary/10 p-3 rounded-full shrink-0">
+                    <User className="text-primary" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">{ref.name}</h4>
+                    <p className="text-secondary text-sm mb-2">{ref.title}</p>
+                    <a href={`tel:${ref.phone.replace(/\s/g, "")}`} className="text-primary text-sm hover:underline">
+                      {ref.phone}
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         <Card className="mt-16 bg-card border-border">
@@ -102,29 +136,29 @@ const Contact = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="block text-sm font-medium">
-                    Your Name
+                    {ui.formName}
                   </label>
-                  <Input 
+                  <Input
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="John Doe"
+                    placeholder={ui.placeholders.name}
                     required
                     className="bg-background border-border focus-visible:ring-primary"
                   />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="block text-sm font-medium">
-                    Your Email
+                    {ui.formEmail}
                   </label>
-                  <Input 
+                  <Input
                     id="email"
                     name="email"
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="john@example.com"
+                    placeholder={ui.placeholders.email}
                     required
                     className="bg-background border-border focus-visible:ring-primary"
                   />
@@ -132,38 +166,38 @@ const Contact = () => {
               </div>
               <div className="space-y-2">
                 <label htmlFor="subject" className="block text-sm font-medium">
-                  Subject
+                  {ui.formSubject}
                 </label>
-                <Input 
+                <Input
                   id="subject"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Project Discussion"
+                  placeholder={ui.placeholders.subject}
                   required
                   className="bg-background border-border focus-visible:ring-primary"
                 />
               </div>
               <div className="space-y-2">
                 <label htmlFor="message" className="block text-sm font-medium">
-                  Your Message
+                  {ui.formMessage}
                 </label>
-                <Textarea 
+                <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell me about your project..."
+                  placeholder={ui.placeholders.message}
                   required
                   className="min-h-[150px] bg-background border-border focus-visible:ring-primary"
                 />
               </div>
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/80"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? ui.sending : ui.send}
               </Button>
             </form>
           </CardContent>
