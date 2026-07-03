@@ -31,15 +31,16 @@ export const projectAssets = [
   },
   {
     repo: "web-based-telemedicine-platform-",
-    image: projectImage("it-dashboard.jpg"),
+    image: projectImage("gara-telemedicine.jpg"),
     technologies: ["React", "TypeScript", "Node.js", "Express", "SQLite", "Socket.IO", "Tailwind CSS"],
     githubUrl: personalRepo("web-based-telemedicine-platform-"),
   },
   {
     repo: "Nyabinaga-Association-Website",
-    image: projectImage("web-design-docs.jpg"),
+    image: projectImage("nyabinaga-association.jpg"),
     technologies: ["React", "Vite", "Tailwind CSS", "React Router", "Recharts"],
     githubUrl: personalRepo("Nyabinaga-Association-Website"),
+    liveUrl: "https://nyabinaga-association-website.vercel.app",
   },
   {
     repo: "improved-property-management-system-with-ui-dynamo-team",
