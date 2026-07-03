@@ -300,6 +300,26 @@ export const en: PortfolioContent = {
       status: "Featured",
     },
     {
+      repo: "web-based-telemedicine-platform-",
+      title: "Gara — Telemedicine Platform",
+      organization: "Personal",
+      description:
+        "Bilingual (English/Kinyarwanda) telemedicine platform for private practices — patient triage, appointment booking, MTN Mobile Money payments, real-time doctor chat, and PDF prescriptions, built with React, Node/Express, SQLite, and Socket.IO.",
+      impact:
+        "Expands access to remote healthcare in Rwanda with an offline-capable, clean-architecture full-stack app.",
+      status: "Featured",
+    },
+    {
+      repo: "Nyabinaga-Association-Website",
+      title: "Nyabinaga Community Association Website",
+      organization: "Personal",
+      description:
+        "Warm, responsive website for a Rwandan community-development association — showcasing its 13 livelihood groups, youth programs, impact metrics with charts, and a photo gallery, built with React, Vite, and Tailwind CSS.",
+      impact:
+        "Gives a grassroots association a professional online presence to tell its story and share its community impact.",
+      status: "Completed",
+    },
+    {
       repo: "improved-property-management-system-with-ui-dynamo-team",
       title: "Property Management System",
       organization: "Pelino-Courses",

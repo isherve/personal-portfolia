@@ -30,6 +30,18 @@ export const projectAssets = [
     githubUrl: personalRepo("Hardware-Operations-Inventory-Management-System"),
   },
   {
+    repo: "web-based-telemedicine-platform-",
+    image: projectImage("it-dashboard.jpg"),
+    technologies: ["React", "TypeScript", "Node.js", "Express", "SQLite", "Socket.IO", "Tailwind CSS"],
+    githubUrl: personalRepo("web-based-telemedicine-platform-"),
+  },
+  {
+    repo: "Nyabinaga-Association-Website",
+    image: projectImage("web-design-docs.jpg"),
+    technologies: ["React", "Vite", "Tailwind CSS", "React Router", "Recharts"],
+    githubUrl: personalRepo("Nyabinaga-Association-Website"),
+  },
+  {
     repo: "improved-property-management-system-with-ui-dynamo-team",
     image: projectImage("property-ui-real.jpg"),
     technologies: ["Django", "Python", "HTML", "CSS", "PostgreSQL", "REST API"],
