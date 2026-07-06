@@ -143,7 +143,7 @@ export const en: PortfolioContent = {
       "Final-Year IT Student | Full-Stack Developer | React · Django · Spring Boot · Node.js · AI",
   },
   summary:
-    "Full-stack developer and final-year IT student with hands-on experience across React, TypeScript, Django, Spring Boot, Node.js, and AI/ML. Shipped production applications including telemedicine, inventory management, analytics dashboards, IoT billing, and AI-powered mobile apps. One year of enterprise IT experience at the Ministry of Health strengthens debugging, systems thinking, and secure delivery. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to build scalable, maintainable applications with measurable impact.",
+    "Full-Stack Developer and final-year IT student with production experience in React, TypeScript, Django, Spring Boot, Node.js, and AI/ML. Built and deployed telemedicine, inventory management, IT analytics dashboards, IoT billing, community websites, and AI-powered mobile applications. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
   aboutContent: {
     headline: "Software Developer Building Production-Ready Applications",
     paragraphs: [
@@ -164,10 +164,10 @@ export const en: PortfolioContent = {
       location: "Kigali, Rwanda",
       period: "Mar 2025 – May 2026",
       highlights: [
-        "Supported end-user systems and digital workflows in a government healthcare environment, building strong debugging and production-support discipline.",
-        "Maintained workstation reliability and network connectivity for departments relying on critical health information systems.",
-        "Managed structured digital records and data entry with attention to accuracy, integrity, and consistent processes.",
-        "Coordinated asset tracking and preventive system maintenance with senior IT administrators in a security-conscious setting.",
+        "Supported enterprise systems and digital workflows in a government healthcare environment, strengthening debugging and production-support skills.",
+        "Maintained workstation reliability and network connectivity for teams using critical health information systems.",
+        "Managed structured digital records and data entry with strong focus on accuracy, integrity, and process consistency.",
+        "Coordinated asset tracking and preventive maintenance with senior IT administrators in a security-conscious environment.",
         "Applied security-aware practices when handling user accounts, devices, and sensitive institutional data.",
       ],
     },

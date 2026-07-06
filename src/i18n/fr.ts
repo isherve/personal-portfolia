@@ -143,7 +143,7 @@ export const fr: PortfolioContent = {
       "Étudiant IT en dernière année | Développeur Full-Stack | React · Django · Spring Boot · Node.js · IA",
   },
   summary:
-    "Développeur full-stack et étudiant en dernière année avec une expérience concrète en React, TypeScript, Django, Spring Boot, Node.js et IA/ML. Applications livrées : télémédecine, gestion d'inventaire, tableaux de bord analytiques, facturation IoT et applications mobiles IA. Un an d'expérience IT au Ministère de la Santé renforce le débogage, la rigueur système et la livraison sécurisée. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour construire des applications évolutives et maintenables.",
+    "Développeur Full-Stack et étudiant en dernière année avec une expérience de production en React, TypeScript, Django, Spring Boot, Node.js et IA/ML. Conception et déploiement d'applications de télémédecine, gestion d'inventaire, tableaux de bord IT, facturation IoT, sites communautaires et applications mobiles IA. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
   aboutContent: {
     headline: "Développeur logiciel d'applications prêtes pour la production",
     paragraphs: [

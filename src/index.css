@@ -150,5 +150,12 @@
     box-shadow: none !important;
     border-radius: 0 !important;
     max-width: 100% !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume-paper strong {
+    font-weight: 700 !important;
+    color: #0f172a !important;
   }
 }

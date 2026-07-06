@@ -7,8 +7,8 @@ interface ResumeSectionProps {
 }
 
 const ResumeSection = ({ title, children, className = "" }: ResumeSectionProps) => (
-  <section className={`mb-5 ${className}`}>
-    <h2 className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#0d9488] border-b border-[#0d9488]/30 pb-1 mb-3">
+  <section className={`mb-5 last:mb-0 ${className}`}>
+    <h2 className="text-[11.5px] font-extrabold uppercase tracking-[0.12em] text-[#0f172a] bg-[#f0fdfa] border-l-4 border-[#0d9488] px-2.5 py-1.5 mb-3">
       {title}
     </h2>
     {children}
