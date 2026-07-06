@@ -18,12 +18,12 @@ export const fr: PortfolioContent = {
     },
     language: { switch: "Changer de langue" },
     hero: {
-      badge: "Développeur logiciel",
+      badge: "Développeur Full-Stack",
       headlinePart1: "Créer des applications web modernes ",
       headlineHighlight: "qui font la différence",
-      roleKeywords: "Développeur logiciel | React · TypeScript · Django · Spring Boot",
+      roleKeywords: "Développeur Full-Stack | React · TypeScript · Django · Spring Boot · IA",
       intro:
-        "Développeur logiciel spécialisé en React, TypeScript, Django et Spring Boot. Je construis des applications full-stack sécurisées et évolutives — télémédecine, inventaire, tableaux de bord et applications mobiles.",
+        "Développeur Full-Stack spécialisé en React, TypeScript, Django, Spring Boot et Node.js. Je construis des applications sécurisées et évolutives — applications mobiles IA, télémédecine, inventaire et tableaux de bord analytiques.",
       viewWork: "Voir mes projets",
       downloadCv: "Télécharger le CV",
       preparingPdf: "Préparation du PDF…",
@@ -137,13 +137,13 @@ export const fr: PortfolioContent = {
     },
   },
   personal: {
-    title: "Développeur logiciel Full-Stack | React · TypeScript · Django · Spring Boot",
-    tagline: "Je développe des applications web et mobiles prêtes pour la production qui résolvent de vrais problèmes métier.",
+    title: "Développeur Full-Stack | React · TypeScript · Django · Spring Boot · IA",
+    tagline: "Je développe des applications web et mobiles full-stack prêtes pour la production qui résolvent de vrais problèmes métier.",
     roleLine:
-      "Étudiant IT en dernière année | Développeur logiciel | React · Django · Spring Boot · Node.js",
+      "Étudiant IT en dernière année | Développeur Full-Stack | React · Django · Spring Boot · Node.js · IA",
   },
   summary:
-    "Développeur logiciel et étudiant en dernière année avec une expérience full-stack concrète en React, TypeScript, Django, Spring Boot et Node.js. Applications livrées : télémédecine, gestion d'inventaire, tableaux de bord analytiques, facturation IoT et applications mobiles IA. Un an d'expérience IT au Ministère de la Santé renforce le débogage, la rigueur système et la livraison sécurisée. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur logiciel pour construire des applications évolutives et maintenables.",
+    "Développeur full-stack et étudiant en dernière année avec une expérience concrète en React, TypeScript, Django, Spring Boot, Node.js et IA/ML. Applications livrées : télémédecine, gestion d'inventaire, tableaux de bord analytiques, facturation IoT et applications mobiles IA. Un an d'expérience IT au Ministère de la Santé renforce le débogage, la rigueur système et la livraison sécurisée. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour construire des applications évolutives et maintenables.",
   aboutContent: {
     headline: "Développeur logiciel d'applications prêtes pour la production",
     paragraphs: [
@@ -435,13 +435,13 @@ export const fr: PortfolioContent = {
   resumeSkills: {
     languages: ["TypeScript", "JavaScript", "Python", "Java", "SQL", "HTML/CSS"],
     frameworks: ["React", "Django", "Spring Boot", "Node.js", "Expo", "Tailwind CSS", "Vite"],
-    tools: ["Git", "PostgreSQL", "Supabase", "Docker", "API REST", "JWT", "Socket.IO"],
+    tools: ["Git", "PostgreSQL", "Supabase", "Docker", "API REST", "JWT", "Socket.IO", "IA / ML"],
     domains: [
       "Développement Full-Stack",
       "Conception d'API REST",
       "Développement Mobile",
+      "IA & Machine Learning",
       "Conception de bases de données",
-      "Authentification & RBAC",
     ],
   },
 };

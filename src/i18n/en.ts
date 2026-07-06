@@ -18,12 +18,12 @@ export const en: PortfolioContent = {
     },
     language: { switch: "Switch language" },
     hero: {
-      badge: "Software Developer",
+      badge: "Full-Stack Developer",
       headlinePart1: "Building Modern Web ",
       headlineHighlight: "Applications That Make a Difference",
-      roleKeywords: "Software Developer | React · TypeScript · Django · Spring Boot",
+      roleKeywords: "Full-Stack Developer | React · TypeScript · Django · Spring Boot · AI",
       intro:
-        "Software developer specializing in React, TypeScript, Django, and Spring Boot. I build secure, scalable full-stack applications — from telemedicine and inventory systems to analytics dashboards and mobile apps.",
+        "Full-Stack Developer specializing in React, TypeScript, Django, Spring Boot, and Node.js. I build secure, scalable applications — from AI-powered mobile apps and telemedicine platforms to inventory systems and analytics dashboards.",
       viewWork: "View My Work",
       downloadCv: "Download CV",
       preparingPdf: "Preparing PDF…",
@@ -137,13 +137,13 @@ export const en: PortfolioContent = {
     },
   },
   personal: {
-    title: "Full-Stack Software Developer | React · TypeScript · Django · Spring Boot",
-    tagline: "I build production-ready web and mobile applications that solve real business problems.",
+    title: "Full-Stack Developer | React · TypeScript · Django · Spring Boot · AI",
+    tagline: "I build production-ready full-stack web and mobile applications that solve real business problems.",
     roleLine:
-      "Final-Year IT Student | Software Developer | React · Django · Spring Boot · Node.js",
+      "Final-Year IT Student | Full-Stack Developer | React · Django · Spring Boot · Node.js · AI",
   },
   summary:
-    "Software developer and final-year IT student with hands-on full-stack experience in React, TypeScript, Django, Spring Boot, and Node.js. Shipped production applications including telemedicine, inventory management, analytics dashboards, IoT billing, and AI-powered mobile apps. One year of enterprise IT experience at the Ministry of Health strengthens debugging, systems thinking, and secure delivery. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Software Developer role to build scalable, maintainable applications with measurable impact.",
+    "Full-stack developer and final-year IT student with hands-on experience across React, TypeScript, Django, Spring Boot, Node.js, and AI/ML. Shipped production applications including telemedicine, inventory management, analytics dashboards, IoT billing, and AI-powered mobile apps. One year of enterprise IT experience at the Ministry of Health strengthens debugging, systems thinking, and secure delivery. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to build scalable, maintainable applications with measurable impact.",
   aboutContent: {
     headline: "Software Developer Building Production-Ready Applications",
     paragraphs: [
@@ -435,13 +435,13 @@ export const en: PortfolioContent = {
   resumeSkills: {
     languages: ["TypeScript", "JavaScript", "Python", "Java", "SQL", "HTML/CSS"],
     frameworks: ["React", "Django", "Spring Boot", "Node.js", "Expo", "Tailwind CSS", "Vite"],
-    tools: ["Git", "PostgreSQL", "Supabase", "Docker", "REST APIs", "JWT", "Socket.IO"],
+    tools: ["Git", "PostgreSQL", "Supabase", "Docker", "REST APIs", "JWT", "Socket.IO", "AI / ML"],
     domains: [
       "Full-Stack Development",
       "REST API Design",
       "Mobile Development",
+      "AI & Machine Learning",
       "Database Design",
-      "Authentication & RBAC",
     ],
   },
 };
