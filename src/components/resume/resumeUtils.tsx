@@ -25,7 +25,7 @@ export function emphasizeTerms(text: string, terms: string[]): ReactNode {
       parts.forEach((part, index) => {
         if (part.toLowerCase() === term.toLowerCase()) {
           next.push(
-            <strong key={`${term}-${index}`} className="font-bold text-[#0f172a]">
+            <strong key={`${term}-${index}`} className="font-extrabold text-[#0f172a]">
               {part}
             </strong>,
           );
@@ -45,7 +45,7 @@ export function emphasizeTerms(text: string, terms: string[]): ReactNode {
 export function boldBulletLead(text: string): ReactNode {
   const match = text.match(/^(.+?)(,\s| — | – )/);
   if (!match) {
-    return <strong className="font-bold text-[#0f172a]">{text}</strong>;
+    return <strong className="font-extrabold text-[#0f172a]">{text}</strong>;
   }
 
   const lead = match[1];
@@ -53,7 +53,7 @@ export function boldBulletLead(text: string): ReactNode {
 
   return (
     <>
-      <strong className="font-bold text-[#0f172a]">{lead}</strong>
+      <strong className="font-extrabold text-[#0f172a]">{lead}</strong>
       {rest}
     </>
   );

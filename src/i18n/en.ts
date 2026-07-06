@@ -140,19 +140,19 @@ export const en: PortfolioContent = {
     title: "Full-Stack Developer | React · TypeScript · Django · Spring Boot · AI",
     tagline: "I build production-ready full-stack web and mobile applications that solve real business problems.",
     roleLine:
-      "Final-Year IT Student | Full-Stack Developer | React · Django · Spring Boot · Node.js · AI",
+      "B.Sc. IT Graduate | Full-Stack Developer | React · Django · Spring Boot · Node.js · AI",
   },
   summary:
-    "Full-Stack Developer and final-year IT student with production experience in React, TypeScript, Django, Spring Boot, Node.js, and AI/ML. Built and deployed telemedicine, inventory management, IT analytics dashboards, IoT billing, community websites, and AI-powered mobile applications. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
+    "Full-Stack Developer and B.Sc. Information Technology graduate with production experience in React, TypeScript, Django, Spring Boot, Node.js, and AI/ML. Built and deployed telemedicine, inventory management, IT analytics dashboards, IoT billing, community websites, and AI-powered mobile applications. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
   aboutContent: {
     headline: "Software Developer Building Production-Ready Applications",
     paragraphs: [
-      "I am a final-year Information Technology student at the University of Rwanda and a software developer focused on shipping real applications. I work across the full stack — React and TypeScript frontends, Django and Spring Boot backends, and mobile apps with Expo — turning project ideas into deployable software.",
+      "I am a B.Sc. Information Technology graduate from the University of Rwanda and a software developer focused on shipping real applications. I work across the full stack — React and TypeScript frontends, Django and Spring Boot backends, and mobile apps with Expo — turning project ideas into deployable software.",
       "Beyond coursework, I have built telemedicine platforms, retail inventory systems, IT analytics dashboards, community websites, and IoT billing solutions. Each project follows clean architecture, role-based access, and production-minded patterns.",
-      "A one-year internship at the Ministry of Health gave me enterprise discipline: debugging under pressure, maintaining reliable systems, and handling data with care. I hold certifications from Cisco, Microsoft, and freeCodeCamp, and I am ready to contribute as a junior or mid-level software developer.",
+      "A one-year internship at the Ministry of Health gave me enterprise discipline: debugging under pressure, maintaining reliable systems, and handling data with care. I hold certifications from Cisco, Microsoft, and freeCodeCamp, and I am ready to contribute as a Full-Stack Developer.",
     ],
     highlights: [
-      { key: "education", value: "B.Sc. Information Technology", detail: "University of Rwanda · Expected Oct 2026" },
+      { key: "education", value: "B.Sc. Information Technology", detail: "University of Rwanda · Graduated Oct 2026" },
       { key: "experience", value: "IT Intern", detail: "Ministry of Health · 1 year" },
       { key: "location", value: "Kigali, Rwanda", detail: "Open to remote and on-site opportunities" },
     ],
@@ -177,9 +177,9 @@ export const en: PortfolioContent = {
       degree: "Bachelor of Science in Information Technology",
       institution: "University of Rwanda",
       location: "Kigali, Rwanda",
-      period: "Jun 2022 – Oct 2026 (Expected)",
+      period: "Jun 2022 – Oct 2026",
       detail:
-        "Relevant coursework: software engineering, databases, computer networks, cybersecurity, and systems design. Expected graduation: October 2026.",
+        "Relevant coursework: software engineering, databases, computer networks, cybersecurity, and systems design. Graduated October 2026.",
     },
     {
       degree: "A2 Diploma — Mathematics, Computer Science & Economics",

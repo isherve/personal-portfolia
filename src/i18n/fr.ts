@@ -140,19 +140,19 @@ export const fr: PortfolioContent = {
     title: "Développeur Full-Stack | React · TypeScript · Django · Spring Boot · IA",
     tagline: "Je développe des applications web et mobiles full-stack prêtes pour la production qui résolvent de vrais problèmes métier.",
     roleLine:
-      "Étudiant IT en dernière année | Développeur Full-Stack | React · Django · Spring Boot · Node.js · IA",
+      "Licencié en IT | Développeur Full-Stack | React · Django · Spring Boot · Node.js · IA",
   },
   summary:
-    "Développeur Full-Stack et étudiant en dernière année avec une expérience de production en React, TypeScript, Django, Spring Boot, Node.js et IA/ML. Conception et déploiement d'applications de télémédecine, gestion d'inventaire, tableaux de bord IT, facturation IoT, sites communautaires et applications mobiles IA. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
+    "Développeur Full-Stack et diplômé en Technologies de l'Information avec une expérience de production en React, TypeScript, Django, Spring Boot, Node.js et IA/ML. Conception et déploiement d'applications de télémédecine, gestion d'inventaire, tableaux de bord IT, facturation IoT, sites communautaires et applications mobiles IA. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
   aboutContent: {
     headline: "Développeur logiciel d'applications prêtes pour la production",
     paragraphs: [
-      "Je suis étudiant en Technologies de l'Information en dernière année à l'Université du Rwanda et développeur logiciel axé sur la livraison d'applications réelles. Je travaille sur toute la stack — frontends React et TypeScript, backends Django et Spring Boot, et applications mobiles Expo.",
+      "Je suis diplômé en Technologies de l'Information de l'Université du Rwanda et développeur logiciel axé sur la livraison d'applications réelles. Je travaille sur toute la stack — frontends React et TypeScript, backends Django et Spring Boot, et applications mobiles Expo.",
       "Au-delà des cours, j'ai construit des plateformes de télémédecine, des systèmes d'inventaire retail, des tableaux de bord IT, des sites communautaires et des solutions de facturation IoT. Chaque projet suit une architecture claire, un accès par rôles et des pratiques orientées production.",
-      "Un stage d'un an au Ministère de la Santé m'a donné une discipline d'entreprise : déboguer sous pression, maintenir des systèmes fiables et traiter les données avec soin. Certifié Cisco, Microsoft et freeCodeCamp, je suis prêt à contribuer comme développeur junior ou intermédiaire.",
+      "Un stage d'un an au Ministère de la Santé m'a donné une discipline d'entreprise : déboguer sous pression, maintenir des systèmes fiables et traiter les données avec soin. Certifié Cisco, Microsoft et freeCodeCamp, je suis prêt à contribuer comme Développeur Full-Stack.",
     ],
     highlights: [
-      { key: "education", value: "Licence en Technologies de l'Information", detail: "Université du Rwanda · Oct 2026 prévu" },
+      { key: "education", value: "Licence en Technologies de l'Information", detail: "Université du Rwanda · Diplômé Oct 2026" },
       { key: "experience", value: "Stagiaire IT", detail: "Ministère de la Santé · 1 an" },
       { key: "location", value: "Kigali, Rwanda", detail: "Ouvert au télétravail et sur site" },
     ],
@@ -177,9 +177,9 @@ export const fr: PortfolioContent = {
       degree: "Licence en Sciences — Technologies de l'Information",
       institution: "Université du Rwanda",
       location: "Kigali, Rwanda",
-      period: "Juin 2022 – Oct 2026 (prévu)",
+      period: "Juin 2022 – Oct 2026",
       detail:
-        "Cours pertinents : génie logiciel, bases de données, réseaux informatiques, cybersécurité et conception de systèmes. Diplôme prévu : octobre 2026.",
+        "Cours pertinents : génie logiciel, bases de données, réseaux informatiques, cybersécurité et conception de systèmes. Diplômé en octobre 2026.",
     },
     {
       degree: "Diplôme A2 — Mathématiques, Informatique & Économie",
