@@ -18,22 +18,22 @@ export const fr: PortfolioContent = {
     },
     language: { switch: "Changer de langue" },
     hero: {
-      badge: "Développeur Full-Stack",
+      badge: "Développeur logiciel",
       headlinePart1: "Créer des applications web modernes ",
       headlineHighlight: "qui font la différence",
-      roleKeywords: "Développeur Full-Stack | React • Django • API REST • Réseaux",
+      roleKeywords: "Développeur logiciel | React · TypeScript · Django · Spring Boot",
       intro:
-        "Développeur Full-Stack spécialisé en React, Django, API REST et technologies web modernes. Passionné par la création de solutions numériques sécurisées, évolutives et centrées sur l'utilisateur.",
+        "Développeur logiciel spécialisé en React, TypeScript, Django et Spring Boot. Je construis des applications full-stack sécurisées et évolutives — télémédecine, inventaire, tableaux de bord et applications mobiles.",
       viewWork: "Voir mes projets",
       downloadCv: "Télécharger le CV",
       preparingPdf: "Préparation du PDF…",
       contactMe: "Me contacter",
       scrollAbout: "Aller à la section À propos",
       features: [
-        { title: "Développement Full-Stack", subtitle: "React, Django, API REST" },
-        { title: "Bases de données", subtitle: "PostgreSQL, SQL" },
-        { title: "Réseaux", subtitle: "Routage, commutation, support réseau" },
-        { title: "Outils & Technologies", subtitle: "Git, Linux, Docker" },
+        { title: "Développement Full-Stack", subtitle: "React, Django, Spring Boot" },
+        { title: "Backend & APIs", subtitle: "API REST, JWT, PostgreSQL" },
+        { title: "Mobile & UI moderne", subtitle: "Expo, TypeScript, Tailwind" },
+        { title: "Outils & Workflow", subtitle: "Git, Docker, Linux" },
       ],
     },
     about: {
@@ -137,19 +137,19 @@ export const fr: PortfolioContent = {
     },
   },
   personal: {
-    title: "Développeur logiciel | Full-Stack (React & Django) | Systèmes IoT",
-    tagline: "Je conçois et développe des systèmes logiciels qui résolvent de vrais problèmes opérationnels.",
+    title: "Développeur logiciel Full-Stack | React · TypeScript · Django · Spring Boot",
+    tagline: "Je développe des applications web et mobiles prêtes pour la production qui résolvent de vrais problèmes métier.",
     roleLine:
-      "Étudiant IT en dernière année | Développeur Full-Stack (React, Django) | IoT & Automatisation",
+      "Étudiant IT en dernière année | Développeur logiciel | React · Django · Spring Boot · Node.js",
   },
   summary:
-    "Étudiant en Technologies de l'Information en dernière année et développeur logiciel avec un an d'expérience IT en entreprise au Ministère de la Santé. Combine des compétences full-stack (React, Django, Python) avec une solide base en administration système, réseaux et cybersécurité. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste d'ingénieur logiciel pour livrer des applications sécurisées et maintenables avec un impact mesurable.",
+    "Développeur logiciel et étudiant en dernière année avec une expérience full-stack concrète en React, TypeScript, Django, Spring Boot et Node.js. Applications livrées : télémédecine, gestion d'inventaire, tableaux de bord analytiques, facturation IoT et applications mobiles IA. Un an d'expérience IT au Ministère de la Santé renforce le débogage, la rigueur système et la livraison sécurisée. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur logiciel pour construire des applications évolutives et maintenables.",
   aboutContent: {
-    headline: "Développeur Full-Stack avec expérience IT en entreprise",
+    headline: "Développeur logiciel d'applications prêtes pour la production",
     paragraphs: [
-      "Je suis étudiant en Technologies de l'Information en dernière année à l'Université du Rwanda et développeur logiciel qui fait le lien entre le code et l'infrastructure. Mon travail combine le développement web moderne avec la discipline opérationnelle acquise lors d'un stage d'un an au Ministère de la Santé.",
-      "Dans ce rôle, j'ai résolu des incidents IT quotidiens — pannes réseau, défaillances matérielles — tout en assurant la gestion des données et la maintenance des systèmes pour une grande organisation du secteur public. Cette expérience m'a appris à construire des logiciels fiables, sécurisés et centrés sur l'utilisateur.",
-      "Je me concentre aujourd'hui sur le développement full-stack React et Django, le prototypage IoT et les fondamentaux de la cybersécurité. Je détiens des certifications Cisco, Microsoft et freeCodeCamp, et je livre continuellement des projets qui transforment les compétences techniques en solutions pratiques.",
+      "Je suis étudiant en Technologies de l'Information en dernière année à l'Université du Rwanda et développeur logiciel axé sur la livraison d'applications réelles. Je travaille sur toute la stack — frontends React et TypeScript, backends Django et Spring Boot, et applications mobiles Expo.",
+      "Au-delà des cours, j'ai construit des plateformes de télémédecine, des systèmes d'inventaire retail, des tableaux de bord IT, des sites communautaires et des solutions de facturation IoT. Chaque projet suit une architecture claire, un accès par rôles et des pratiques orientées production.",
+      "Un stage d'un an au Ministère de la Santé m'a donné une discipline d'entreprise : déboguer sous pression, maintenir des systèmes fiables et traiter les données avec soin. Certifié Cisco, Microsoft et freeCodeCamp, je suis prêt à contribuer comme développeur junior ou intermédiaire.",
     ],
     highlights: [
       { key: "education", value: "Licence en Technologies de l'Information", detail: "Université du Rwanda · Oct 2026 prévu" },
@@ -159,15 +159,15 @@ export const fr: PortfolioContent = {
   },
   experience: [
     {
-      role: "Stagiaire en Technologies de l'Information",
+      role: "Stagiaire IT — Systèmes & Support applicatif",
       company: "Ministère de la Santé",
       location: "Kigali, Rwanda",
       period: "Mars 2025 – Mai 2026",
       highlights: [
-        "Assuré le support IT de niveau 1 dans les bureaux départementaux, résolvant pannes matérielles, problèmes logiciels et demandes utilisateurs dans un contexte de santé publique.",
-        "Diagnostiqué et rétabli la connectivité réseau, contribuant au fonctionnement fiable des systèmes d'information sanitaires critiques.",
-        "Géré la saisie structurée de données, l'organisation des archives numériques et les flux administratifs alignés sur les processus IT de l'organisation.",
-        "Soutenu le suivi des actifs, la maintenance des postes de travail et l'entretien préventif des systèmes en coordination avec les administrateurs IT seniors.",
+        "Soutenu les systèmes utilisateurs et workflows numériques dans un environnement de santé publique, développant une forte discipline de débogage et de support en production.",
+        "Maintenu la fiabilité des postes de travail et la connectivité réseau pour les départements dépendant de systèmes d'information sanitaires critiques.",
+        "Géré des archives numériques structurées et la saisie de données avec attention à l'exactitude, l'intégrité et la cohérence des processus.",
+        "Coordonné le suivi des actifs et la maintenance préventive avec les administrateurs IT seniors dans un contexte soucieux de la sécurité.",
         "Appliqué des pratiques de sécurité lors de la gestion des comptes utilisateurs, des appareils et des données institutionnelles sensibles.",
       ],
     },
@@ -191,18 +191,18 @@ export const fr: PortfolioContent = {
     },
   ],
   skillGroups: {
-    "Développement Frontend": ["React", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "UI responsive"],
-    "Backend & APIs": ["Django", "Python", "API REST", "PostgreSQL", "SQL", "C# / .NET"],
-    "Systèmes & Infrastructure": ["Linux", "Réseaux", "Support IT", "Administration système", "Git"],
-    "Technologies émergentes": ["IoT (ESP32)", "MQTT", "Cybersécurité", "Fondamentaux IA", "Gestion des données"],
+    "Développement Frontend": ["React", "TypeScript", "JavaScript", "React Native", "Tailwind CSS", "HTML/CSS"],
+    "Backend & APIs": ["Django", "Spring Boot", "Node.js", "Python", "Java", "API REST", "PostgreSQL"],
+    "Outils & Plateformes": ["Git", "Docker", "Linux", "Supabase", "SQLite", "Vite"],
+    "Spécialisations": ["Apps Web Full-Stack", "Mobile (Expo)", "Systèmes IoT", "Machine Learning", "RBAC & Auth"],
   },
   coreCompetencies: [
-    { name: "Développement Web Full-Stack", level: 80 },
-    { name: "Programmation (Python, JS, C#)", level: 78 },
-    { name: "Support IT & Dépannage", level: 85 },
-    { name: "Réseaux & Systèmes", level: 75 },
-    { name: "Bases de données & Données", level: 80 },
-    { name: "Fondamentaux Cybersécurité", level: 55 },
+    { name: "Développement Web Full-Stack", level: 85 },
+    { name: "React & TypeScript", level: 85 },
+    { name: "APIs Backend (Django / Spring Boot)", level: 80 },
+    { name: "Bases de données (PostgreSQL / SQL)", level: 82 },
+    { name: "Résolution de problèmes & Débogage", level: 88 },
+    { name: "Git & Contrôle de version", level: 85 },
   ],
   spokenLanguages: [
     { name: "Kinyarwanda", level: "Natif / Courant", percent: 100 },
@@ -320,6 +320,16 @@ export const fr: PortfolioContent = {
       status: "Completed",
     },
     {
+      repo: "IgiciroHub",
+      title: "IgiciroHub — Application de prédiction des prix du café",
+      organization: "Personal",
+      description:
+        "Application mobile IA de projet de fin d'études pour les coopératives caféières rwandaises — prédictions Random Forest avec intervalles de confiance, marketplace, chat temps réel, alertes de prix et rapports PDF. API Django REST avec frontend Expo React Native.",
+      impact:
+        "Aide les coopératives caféières et acheteurs à prendre des décisions de prix basées sur les données et à accéder aux opportunités du marché via le mobile.",
+      status: "Featured",
+    },
+    {
       repo: "improved-property-management-system-with-ui-dynamo-team",
       title: "Système de gestion immobilière",
       organization: "Pelino-Courses",
@@ -423,15 +433,15 @@ export const fr: PortfolioContent = {
     { name: "M. HARELIMANA Dominique", title: "Instructeur Cisco, Université du Rwanda / CST", phone: "+250 785 135 124" },
   ],
   resumeSkills: {
-    languages: ["JavaScript", "TypeScript", "Python", "C#", "HTML/CSS", "SQL"],
-    frameworks: ["React", "Django", "Vite", "Tailwind CSS", ".NET"],
-    tools: ["Git", "API REST", "PostgreSQL", "Linux", "Réseaux", "ESP32 / IoT"],
+    languages: ["TypeScript", "JavaScript", "Python", "Java", "SQL", "HTML/CSS"],
+    frameworks: ["React", "Django", "Spring Boot", "Node.js", "Expo", "Tailwind CSS", "Vite"],
+    tools: ["Git", "PostgreSQL", "Supabase", "Docker", "API REST", "JWT", "Socket.IO"],
     domains: [
       "Développement Full-Stack",
-      "Opérations & Support IT",
-      "Administration Réseau",
-      "Cybersécurité",
-      "Gestion des Données",
+      "Conception d'API REST",
+      "Développement Mobile",
+      "Conception de bases de données",
+      "Authentification & RBAC",
     ],
   },
 };

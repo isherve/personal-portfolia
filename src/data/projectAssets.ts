@@ -43,6 +43,12 @@ export const projectAssets = [
     liveUrl: "https://nyabinaga-association-website.vercel.app",
   },
   {
+    repo: "IgiciroHub",
+    image: projectImage("smart-flow-real.jpg"),
+    technologies: ["Django", "React Native", "Expo", "TypeScript", "Python", "Machine Learning", "JWT"],
+    githubUrl: personalRepo("IgiciroHub"),
+  },
+  {
     repo: "improved-property-management-system-with-ui-dynamo-team",
     image: projectImage("property-ui-real.jpg"),
     technologies: ["Django", "Python", "HTML", "CSS", "PostgreSQL", "REST API"],

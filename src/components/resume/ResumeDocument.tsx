@@ -19,6 +19,7 @@ const ResumeDocument = () => {
 
   const featuredCerts = certifications.filter((c) => c.highlight);
   const otherCerts = certifications.filter((c) => !c.highlight);
+  const resumeProjects = projects.filter((p) => p.status === "Featured" || p.status === "Live");
 
   return (
     <article
@@ -80,7 +81,7 @@ const ResumeDocument = () => {
             </ResumeSection>
 
             <ResumeSection title={labels.selectedProjects}>
-              {projects.map((project) => (
+              {resumeProjects.map((project) => (
                 <div key={project.repo} className="mb-3.5 last:mb-0">
                   <h3 className="font-bold text-[#0f172a] text-[13px]">{project.title}</h3>
                   <p className="text-[#475569] text-[12px] leading-[1.65] mt-1">{project.description}</p>
