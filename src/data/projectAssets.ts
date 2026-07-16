@@ -81,6 +81,25 @@ export const projectAssets = [
     githubUrl: personalRepo("Hardware-Operations-Inventory-Management-System"),
   },
   {
+    repo: "matchday-and-transfer-management-",
+    image: projectImage("event-locator-real.jpg"),
+    technologies: [
+      "Java",
+      "Dart",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Spring Boot",
+      "Flutter",
+      "MySQL",
+      "Docker",
+      "Thymeleaf",
+      "Maven",
+      "Swagger",
+    ],
+    githubUrl: personalRepo("matchday-and-transfer-management-"),
+  },
+  {
     repo: "web-based-telemedicine-platform-",
     image: projectImage("gara-telemedicine.jpg"),
     technologies: [
