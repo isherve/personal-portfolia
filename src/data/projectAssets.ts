@@ -82,7 +82,7 @@ export const projectAssets = [
   },
   {
     repo: "matchday-and-transfer-management-",
-    image: projectImage("ferwafa-matchday.jpg"),
+    image: projectImage("ferwafa-matchday-login.jpg"),
     technologies: [
       "Java",
       "Dart",
