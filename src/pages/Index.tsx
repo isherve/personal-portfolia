@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -8,12 +7,14 @@ import Certificates from "@/components/Certificates";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import CursorAshField from "@/components/CursorAshField";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="relative min-h-screen bg-background text-foreground">
+      <CursorAshField />
       <Header />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Skills />
