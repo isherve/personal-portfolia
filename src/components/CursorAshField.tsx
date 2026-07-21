@@ -12,7 +12,7 @@ type Particle = {
   friction: number;
 };
 
-/** Soft teal ashes + cursor burst — same behavior as https://codacre.com/ */
+/** Soft teal ashes + cursor burst particle field. */
 const TEAL_RGB = ["136,254,231", "136,254,231", "136,254,231", "86,246,219"] as const;
 const TEAL_RGB_LIGHT = ["15,148,136", "13,148,136", "20,160,145", "45,180,165"] as const;
 const MAX_PARTICLES = 140;
