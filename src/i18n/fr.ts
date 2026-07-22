@@ -143,12 +143,12 @@ export const fr: PortfolioContent = {
       "Licencié en IT | Développeur Full-Stack | React · Django · Spring Boot · Flutter · Node.js · IA",
   },
   summary:
-    "Développeur Full-Stack et diplômé en Technologies de l'Information avec une expérience de production en React, TypeScript, Django, Spring Boot, Flutter, Node.js et IA/ML. Conception et déploiement de systèmes de match-day pour le football national, télémédecine, gestion d'inventaire, tableaux de bord IT, facturation IoT, sites communautaires et applications mobiles IA. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
+    "Développeur Full-Stack et diplômé en Technologies de l'Information avec une expérience de production en React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js et IA/ML. Conception et déploiement de plateformes santé avec triage IA, systèmes QR de contrôle campus, outils de match-day football, télémédecine, inventaire, tableaux de bord IT, facturation IoT et applications mobiles IA. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
   aboutContent: {
     headline: "Développeur logiciel d'applications prêtes pour la production",
     paragraphs: [
-      "Je suis diplômé en Technologies de l'Information de l'Université du Rwanda et développeur logiciel axé sur la livraison d'applications réelles. Je travaille sur toute la stack — frontends React et TypeScript, backends Django et Spring Boot, et applications mobiles Flutter et Expo.",
-      "Au-delà des cours, j'ai construit une plateforme FERWAFA de match-day et de transferts, des systèmes de télémédecine, des outils d'inventaire retail, des tableaux de bord IT, des sites communautaires et des solutions de facturation IoT. Chaque projet suit une architecture claire, un accès par rôles et des pratiques orientées production.",
+      "Je suis diplômé en Technologies de l'Information de l'Université du Rwanda et développeur logiciel axé sur la livraison d'applications réelles. Je travaille sur toute la stack — frontends React et TypeScript, backends Django, Spring Boot et PHP, et applications mobiles Flutter et Expo.",
+      "Au-delà des cours, j'ai construit Ubuzima Bwiza (triage santé IA), Computer Checks (vérification QR campus), une plateforme FERWAFA de match-day, des systèmes de télémédecine, des outils d'inventaire retail, des tableaux de bord IT, des sites communautaires et des solutions de facturation IoT. Chaque projet suit une architecture claire, un accès par rôles et des pratiques orientées production.",
       "Un stage d'un an au Ministère de la Santé m'a donné une discipline d'entreprise : déboguer sous pression, maintenir des systèmes fiables et traiter les données avec soin. Certifié Cisco, Microsoft et freeCodeCamp, je suis prêt à contribuer comme Développeur Full-Stack.",
     ],
     highlights: [
@@ -192,7 +192,7 @@ export const fr: PortfolioContent = {
   ],
   skillGroups: {
     "Développement Frontend": ["React", "TypeScript", "JavaScript", "Flutter", "React Native", "Tailwind CSS", "HTML/CSS"],
-    "Backend & APIs": ["Django", "Spring Boot", "Node.js", "Python", "Java", "API REST", "PostgreSQL", "MySQL"],
+    "Backend & APIs": ["Django", "Spring Boot", "Node.js", "PHP", "Python", "Java", "API REST", "PostgreSQL", "MySQL"],
     "Outils & Plateformes": ["Git", "Docker", "Linux", "Supabase", "SQLite", "Vite", "Maven"],
     "Spécialisations": ["Apps Web Full-Stack", "Mobile (Flutter / Expo)", "Systèmes IoT", "Machine Learning", "RBAC & Auth"],
   },
@@ -307,6 +307,26 @@ export const fr: PortfolioContent = {
         "Monorepo de production pour la Rwanda Premier League — API REST Spring Boot avec interface Thymeleaf, application mobile Flutter pour arbitres, MySQL, Docker et Swagger. Digitalise les rapports de match, classements et transferts de joueurs pour la FERWAFA.",
       impact:
         "Modernise les opérations du football national en remplaçant les processus papier de rapports de match et de transferts par une plateforme full-stack sécurisée.",
+      status: "Featured",
+    },
+    {
+      repo: "ubuzima-bwiza",
+      title: "Ubuzima Bwiza — Plateforme de santé",
+      organization: "Personal",
+      description:
+        "Plateforme de santé complète avec tableaux de bord patient, médecin, hôpital et admin — rendez-vous, médicaments, dossiers, soins chroniques, messagerie et assistant IA pour le triage des symptômes et suggestions de spécialistes (React, TypeScript, Vite).",
+      impact:
+        "Offre une expérience santé digitale de bout en bout avec workflows par rôles et triage assisté par IA pour patients et soignants.",
+      status: "Featured",
+    },
+    {
+      repo: "computer-checks",
+      title: "Computer Checks — Contrôle QR au campus",
+      organization: "Personal",
+      description:
+        "Système PHP et MySQL de contrôle à l'entrée du campus UTB Rubavu — enregistrer les ordinateurs personnels, générer des QR codes par propriétaire et journaliser les entrées/sorties pour admins et agents de porte avec Bootstrap, JavaScript et codes-barres TCPDF.",
+      impact:
+        "Sécurise l'entrée des appareils sur le campus grâce à une vérification QR et des journaux d'audit clairs pour les opérations de porte.",
       status: "Featured",
     },
     {
@@ -443,9 +463,9 @@ export const fr: PortfolioContent = {
     { name: "M. HARELIMANA Dominique", title: "Instructeur Cisco, Université du Rwanda / CST", phone: "+250 785 135 124" },
   ],
   resumeSkills: {
-    languages: ["TypeScript", "JavaScript", "Python", "Java", "Dart", "SQL", "HTML/CSS"],
-    frameworks: ["React", "Django", "Spring Boot", "Flutter", "Node.js", "Expo", "Tailwind CSS", "Vite"],
-    tools: ["Git", "PostgreSQL", "MySQL", "Supabase", "Docker", "API REST", "JWT", "Socket.IO", "IA / ML"],
+    languages: ["TypeScript", "JavaScript", "Python", "Java", "PHP", "Dart", "SQL", "HTML/CSS"],
+    frameworks: ["React", "Django", "Spring Boot", "Flutter", "Node.js", "Expo", "Bootstrap", "Tailwind CSS", "Vite"],
+    tools: ["Git", "PostgreSQL", "MySQL", "Supabase", "Docker", "API REST", "JWT", "Socket.IO", "IA / ML", "QR / TCPDF"],
     domains: [
       "Développement Full-Stack",
       "Conception d'API REST",

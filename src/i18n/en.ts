@@ -143,12 +143,12 @@ export const en: PortfolioContent = {
       "B.Sc. IT Graduate | Full-Stack Developer | React · Django · Spring Boot · Flutter · Node.js · AI",
   },
   summary:
-    "Full-Stack Developer and B.Sc. Information Technology graduate with production experience in React, TypeScript, Django, Spring Boot, Flutter, Node.js, and AI/ML. Built and deployed national football match-day systems, telemedicine, inventory management, IT analytics dashboards, IoT billing, community websites, and AI-powered mobile applications. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
+    "Full-Stack Developer and B.Sc. Information Technology graduate with production experience in React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js, and AI/ML. Built and deployed healthcare platforms with AI triage, campus QR gate systems, national football match-day tools, telemedicine, inventory management, IT analytics dashboards, IoT billing, and AI-powered mobile applications. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
   aboutContent: {
     headline: "Software Developer Building Production-Ready Applications",
     paragraphs: [
-      "I am a B.Sc. Information Technology graduate from the University of Rwanda and a software developer focused on shipping real applications. I work across the full stack — React and TypeScript frontends, Django and Spring Boot backends, and mobile apps with Flutter and Expo — turning project ideas into deployable software.",
-      "Beyond coursework, I have built a FERWAFA match-day and transfer management platform, telemedicine systems, retail inventory tools, IT analytics dashboards, community websites, and IoT billing solutions. Each project follows clean architecture, role-based access, and production-minded patterns.",
+      "I am a B.Sc. Information Technology graduate from the University of Rwanda and a software developer focused on shipping real applications. I work across the full stack — React and TypeScript frontends, Django, Spring Boot, and PHP backends, and mobile apps with Flutter and Expo — turning project ideas into deployable software.",
+      "Beyond coursework, I have built Ubuzima Bwiza (AI healthcare triage), Computer Checks (campus QR gate verification), a FERWAFA match-day platform, telemedicine systems, retail inventory tools, IT analytics dashboards, community websites, and IoT billing solutions. Each project follows clean architecture, role-based access, and production-minded patterns.",
       "A one-year internship at the Ministry of Health gave me enterprise discipline: debugging under pressure, maintaining reliable systems, and handling data with care. I hold certifications from Cisco, Microsoft, and freeCodeCamp, and I am ready to contribute as a Full-Stack Developer.",
     ],
     highlights: [
@@ -192,7 +192,7 @@ export const en: PortfolioContent = {
   ],
   skillGroups: {
     "Frontend Development": ["React", "TypeScript", "JavaScript", "Flutter", "React Native", "Tailwind CSS", "HTML/CSS"],
-    "Backend & APIs": ["Django", "Spring Boot", "Node.js", "Python", "Java", "REST APIs", "PostgreSQL", "MySQL"],
+    "Backend & APIs": ["Django", "Spring Boot", "Node.js", "PHP", "Python", "Java", "REST APIs", "PostgreSQL", "MySQL"],
     "Tools & Platforms": ["Git", "Docker", "Linux", "Supabase", "SQLite", "Vite", "Maven"],
     "Specializations": ["Full-Stack Web Apps", "Mobile (Flutter / Expo)", "IoT Systems", "Machine Learning", "RBAC & Auth"],
   },
@@ -307,6 +307,26 @@ export const en: PortfolioContent = {
         "Production monorepo for the Rwanda Premier League — Spring Boot REST API with Thymeleaf admin UI, Flutter referee mobile app, MySQL, Docker, and Swagger. Digitizes match-day reporting, standings, and player transfer workflows for FERWAFA.",
       impact:
         "Modernizes national football operations by replacing paper-based match reporting and transfer processes with a secure full-stack platform.",
+      status: "Featured",
+    },
+    {
+      repo: "ubuzima-bwiza",
+      title: "Ubuzima Bwiza — Healthcare Platform",
+      organization: "Personal",
+      description:
+        "Full healthcare platform with patient, doctor, hospital, and admin dashboards — appointments, medications, records, chronic care, messaging, and an AI health assistant for symptom triage and specialist booking suggestions (React, TypeScript, Vite).",
+      impact:
+        "Delivers an end-to-end digital health experience with role-based workflows and AI-assisted triage for patients and providers.",
+      status: "Featured",
+    },
+    {
+      repo: "computer-checks",
+      title: "Computer Checks — Campus Gate QR System",
+      organization: "Personal",
+      description:
+        "PHP and MySQL campus gate system for UTB Rubavu — register personal computers, generate QR codes by owner name, and log check-in/check-out for admins and gate officers using Bootstrap, JavaScript, and TCPDF barcodes.",
+      impact:
+        "Secures campus device entry with QR-based verification and clear audit logs for gate operations.",
       status: "Featured",
     },
     {
@@ -443,9 +463,9 @@ export const en: PortfolioContent = {
     { name: "Mr. HARELIMANA Dominique", title: "Cisco Instructor, University of Rwanda / CST", phone: "+250 785 135 124" },
   ],
   resumeSkills: {
-    languages: ["TypeScript", "JavaScript", "Python", "Java", "Dart", "SQL", "HTML/CSS"],
-    frameworks: ["React", "Django", "Spring Boot", "Flutter", "Node.js", "Expo", "Tailwind CSS", "Vite"],
-    tools: ["Git", "PostgreSQL", "MySQL", "Supabase", "Docker", "REST APIs", "JWT", "Socket.IO", "AI / ML"],
+    languages: ["TypeScript", "JavaScript", "Python", "Java", "PHP", "Dart", "SQL", "HTML/CSS"],
+    frameworks: ["React", "Django", "Spring Boot", "Flutter", "Node.js", "Expo", "Bootstrap", "Tailwind CSS", "Vite"],
+    tools: ["Git", "PostgreSQL", "MySQL", "Supabase", "Docker", "REST APIs", "JWT", "Socket.IO", "AI / ML", "QR / TCPDF"],
     domains: [
       "Full-Stack Development",
       "REST API Design",
