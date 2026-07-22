@@ -101,7 +101,7 @@ export const projectAssets = [
   },
   {
     repo: "ubuzima-bwiza",
-    image: projectImage("gara-telemedicine.jpg"),
+    image: projectImage("ubuzima-bwiza.jpg"),
     technologies: [
       "TypeScript",
       "JavaScript",
@@ -117,7 +117,7 @@ export const projectAssets = [
   },
   {
     repo: "computer-checks",
-    image: projectImage("qr-code.jpg"),
+    image: projectImage("computer-checks-login.jpg"),
     technologies: [
       "PHP",
       "JavaScript",
