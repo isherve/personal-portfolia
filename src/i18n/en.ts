@@ -143,12 +143,12 @@ export const en: PortfolioContent = {
       "B.Sc. IT Graduate | Full-Stack Developer | React · Django · Spring Boot · Flutter · Node.js · AI",
   },
   summary:
-    "Full-Stack Developer and B.Sc. Information Technology graduate with production experience in React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js, and AI/ML. Built and deployed healthcare platforms with AI triage, campus QR gate systems, national football match-day tools, telemedicine, inventory management, IT analytics dashboards, IoT billing, and AI-powered mobile applications. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
+    "Full-Stack Developer and B.Sc. Information Technology graduate with production experience in React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js, and AI/ML. Built and deployed clinic AI co-pilots, healthcare platforms with AI triage, campus QR gate systems, national football match-day tools, telemedicine, inventory management, IT analytics dashboards, IoT billing, and AI-powered mobile applications. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
   aboutContent: {
     headline: "Software Developer Building Production-Ready Applications",
     paragraphs: [
       "I am a B.Sc. Information Technology graduate from the University of Rwanda and a software developer focused on shipping real applications. I work across the full stack — React and TypeScript frontends, Django, Spring Boot, and PHP backends, and mobile apps with Flutter and Expo — turning project ideas into deployable software.",
-      "Beyond coursework, I have built Ubuzima Bwiza (AI healthcare triage), Computer Checks (campus QR gate verification), a FERWAFA match-day platform, telemedicine systems, retail inventory tools, IT analytics dashboards, community websites, and IoT billing solutions. Each project follows clean architecture, role-based access, and production-minded patterns.",
+      "Beyond coursework, I have built Bwiza Workbench (IBM AI Builders clinic co-pilot), Ubuzima Bwiza (AI healthcare triage), Computer Checks (campus QR gate verification), a FERWAFA match-day platform, telemedicine systems, retail inventory tools, IT analytics dashboards, community websites, and IoT billing solutions. Each project follows clean architecture, role-based access, and production-minded patterns.",
       "A one-year internship at the Ministry of Health gave me enterprise discipline: debugging under pressure, maintaining reliable systems, and handling data with care. I hold certifications from Cisco, Microsoft, and freeCodeCamp, and I am ready to contribute as a Full-Stack Developer.",
     ],
     highlights: [
@@ -327,6 +327,16 @@ export const en: PortfolioContent = {
         "Full healthcare platform with patient, doctor, hospital, and admin dashboards — appointments, medications, records, chronic care, messaging, and an AI health assistant for symptom triage and specialist booking suggestions (React, TypeScript, Vite).",
       impact:
         "Delivers an end-to-end digital health experience with role-based workflows and AI-assisted triage for patients and providers.",
+      status: "Featured",
+    },
+    {
+      repo: "bwiza-workbench",
+      title: "Bwiza Workbench — Clinic AI Co-pilot",
+      organization: "Personal",
+      description:
+        "IBM AI Builders Challenge project — AI co-pilot for clinic front desks in Rwanda with patient symptom chat (EN/Kinyarwanda), rule-based urgency triage, specialty routing, clinician note drafts, and human-in-the-loop review (React, Express, SQLite, optional Groq LLM).",
+      impact:
+        "Speeds front-desk intake and triage while keeping clinicians in control — built on healthcare experience from Ubuzima Bwiza and Ministry of Health internship.",
       status: "Featured",
     },
     {

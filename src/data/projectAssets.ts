@@ -134,6 +134,26 @@ export const projectAssets = [
     githubUrl: personalRepo("ubuzima-bwiza"),
   },
   {
+    repo: "bwiza-workbench",
+    image: projectImage("bwiza-workbench.jpg"),
+    technologies: [
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Vite",
+      "Node.js",
+      "Express",
+      "SQLite",
+      "AI",
+      "Tailwind CSS",
+      "IBM Bob",
+    ],
+    githubUrl: personalRepo("bwiza-workbench"),
+    liveUrl: "https://bwiza-workbench.vercel.app",
+  },
+  {
     repo: "computer-checks",
     image: projectImage("computer-checks-login.jpg"),
     technologies: [

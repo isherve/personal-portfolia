@@ -143,12 +143,12 @@ export const fr: PortfolioContent = {
       "Licencié en IT | Développeur Full-Stack | React · Django · Spring Boot · Flutter · Node.js · IA",
   },
   summary:
-    "Développeur Full-Stack et diplômé en Technologies de l'Information avec une expérience de production en React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js et IA/ML. Conception et déploiement de plateformes santé avec triage IA, systèmes QR de contrôle campus, outils de match-day football, télémédecine, inventaire, tableaux de bord IT, facturation IoT et applications mobiles IA. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
+    "Développeur Full-Stack et diplômé en Technologies de l'Information avec une expérience de production en React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js et IA/ML. Conception et déploiement de co-pilotes IA pour cliniques, plateformes santé avec triage IA, systèmes QR de contrôle campus, outils de match-day football, télémédecine, inventaire, tableaux de bord IT, facturation IoT et applications mobiles IA. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
   aboutContent: {
     headline: "Développeur logiciel d'applications prêtes pour la production",
     paragraphs: [
       "Je suis diplômé en Technologies de l'Information de l'Université du Rwanda et développeur logiciel axé sur la livraison d'applications réelles. Je travaille sur toute la stack — frontends React et TypeScript, backends Django, Spring Boot et PHP, et applications mobiles Flutter et Expo.",
-      "Au-delà des cours, j'ai construit Ubuzima Bwiza (triage santé IA), Computer Checks (vérification QR campus), une plateforme FERWAFA de match-day, des systèmes de télémédecine, des outils d'inventaire retail, des tableaux de bord IT, des sites communautaires et des solutions de facturation IoT. Chaque projet suit une architecture claire, un accès par rôles et des pratiques orientées production.",
+      "Au-delà des cours, j'ai construit Bwiza Workbench (co-pilote IA clinique IBM AI Builders), Ubuzima Bwiza (triage santé IA), Computer Checks (vérification QR campus), une plateforme FERWAFA de match-day, des systèmes de télémédecine, des outils d'inventaire retail, des tableaux de bord IT, des sites communautaires et des solutions de facturation IoT. Chaque projet suit une architecture claire, un accès par rôles et des pratiques orientées production.",
       "Un stage d'un an au Ministère de la Santé m'a donné une discipline d'entreprise : déboguer sous pression, maintenir des systèmes fiables et traiter les données avec soin. Certifié Cisco, Microsoft et freeCodeCamp, je suis prêt à contribuer comme Développeur Full-Stack.",
     ],
     highlights: [
@@ -327,6 +327,16 @@ export const fr: PortfolioContent = {
         "Plateforme de santé complète avec tableaux de bord patient, médecin, hôpital et admin — rendez-vous, médicaments, dossiers, soins chroniques, messagerie et assistant IA pour le triage des symptômes et suggestions de spécialistes (React, TypeScript, Vite).",
       impact:
         "Offre une expérience santé digitale de bout en bout avec workflows par rôles et triage assisté par IA pour patients et soignants.",
+      status: "Featured",
+    },
+    {
+      repo: "bwiza-workbench",
+      title: "Bwiza Workbench — Co-pilote IA clinique",
+      organization: "Personal",
+      description:
+        "Projet IBM AI Builders Challenge — co-pilote IA pour accueil de cliniques au Rwanda : chat symptômes (FR/Kinyarwanda), triage d'urgence, orientation spécialité, brouillons de notes cliniques et validation humaine (React, Express, SQLite, Groq optionnel).",
+      impact:
+        "Accélère l'accueil et le triage au guichet tout en laissant les cliniciens décider — s'appuie sur l'expérience Ubuzima Bwiza et le stage au Ministère de la Santé.",
       status: "Featured",
     },
     {
