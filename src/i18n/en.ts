@@ -260,6 +260,16 @@ export const en: PortfolioContent = {
   ],
   projects: [
     {
+      repo: "blue-monkey-tours-invoice-system",
+      title: "Blue Monkey Tours — Invoice Management System",
+      organization: "Personal",
+      description:
+        "Professional tour-operator invoicing for Blue Monkey Tours Rwanda — quotes, multi-currency invoices (USD/RWF desk rates), customers, Lake Kivu boat & wildlife tour catalog, payments (bank/MoMo), and print/PDF, built with PHP, MySQL/SQLite, and Bootstrap.",
+      impact:
+        "Gives a Rwandan boat-tour agency a full booking-to-invoice workflow with live FX and bilingual-ready operations UI.",
+      status: "Featured",
+    },
+    {
       repo: "water-Bill",
       title: "WASAC Smart Water Billing System",
       organization: "Personal",

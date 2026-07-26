@@ -6,6 +6,24 @@ const projectImage = (file: string) => publicAsset(`/projects/${file}`);
 
 export const projectAssets = [
   {
+    repo: "blue-monkey-tours-invoice-system",
+    image: projectImage("blue-monkey-invoice.jpg"),
+    technologies: [
+      "PHP",
+      "MySQL",
+      "SQLite",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "PDO",
+      "Multi-currency",
+      "Vercel",
+    ],
+    githubUrl: personalRepo("blue-monkey-tours-invoice-system"),
+    liveUrl: "https://bluemonkey-tours-ims.vercel.app",
+  },
+  {
     repo: "water-Bill",
     image: projectImage("water-billing.jpg"),
     technologies: [
