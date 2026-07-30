@@ -7,7 +7,7 @@ const pdfOptions = {
   image: { type: "jpeg", quality: 0.98 },
   html2canvas: { scale: 2, useCORS: true, logging: false, scrollY: 0 },
   jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-  pagebreak: { mode: ["css", "legacy"], avoid: ["img"] },
+  pagebreak: { mode: ["css", "legacy"], avoid: [".cv-block", "img"] },
 };
 
 async function cvFileExists(): Promise<boolean> {

@@ -136,14 +136,21 @@
   color: #0f172a;
 }
 
-.resume-paper section {
-  break-inside: auto;
-  page-break-inside: auto;
+/* Keep each CV entry on one page slice — prevents garbled text at page breaks */
+.cv-block {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
 }
 
 #resume-print-source {
   margin: 0;
   padding: 0;
+}
+
+#resume-print-source .resume-paper {
+  width: 210mm;
+  max-width: 210mm;
 }
 
 /* Resume print styles (hidden source — used when browser print is triggered) */
