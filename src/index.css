@@ -126,9 +126,24 @@
 }
 
 /* Resume document — bold, clean typography for screen + PDF export */
+.resume-paper {
+  margin: 0;
+  padding: 0;
+}
+
 .resume-paper strong {
   font-weight: 900;
   color: #0f172a;
+}
+
+.resume-paper section {
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+#resume-print-source {
+  margin: 0;
+  padding: 0;
 }
 
 /* Resume print styles (hidden source — used when browser print is triggered) */

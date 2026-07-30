@@ -4,7 +4,7 @@ import ResumeDocument from "@/components/resume/ResumeDocument";
 const HiddenResumeSource = () => (
   <div
     id="resume-print-source"
-    className="fixed top-0 -left-[10000px] w-[210mm] pointer-events-none"
+    className="fixed top-0 left-0 w-[210mm] pointer-events-none opacity-0 -z-50 overflow-hidden"
     aria-hidden="true"
   >
     <ResumeDocument />

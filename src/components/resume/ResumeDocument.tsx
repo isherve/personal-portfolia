@@ -48,7 +48,7 @@ const ResumeDocument = () => {
       id="resume-document"
       className="resume-paper bg-white text-[#0f172a] rounded-lg shadow-2xl overflow-hidden print:shadow-none print:rounded-none"
     >
-      <header className="bg-[#0f172a] text-white px-8 py-8 print:py-6 border-b-4 border-[#0d9488]">
+      <header className="bg-[#0f172a] text-white px-8 py-6 print:py-5 border-b-4 border-[#0d9488]">
         <h1 className="text-[36px] font-black tracking-tight leading-none mb-2">{personal.name}</h1>
         <p className="text-[#5eead4] font-black text-[16px] leading-snug mb-1.5">{p.title}</p>
         <p className="text-white text-[13.5px] font-bold leading-snug mb-5 max-w-2xl">{p.roleLine}</p>
@@ -86,18 +86,18 @@ const ResumeDocument = () => {
         </div>
       </header>
 
-      <div className="px-8 py-7 print:px-6 print:py-5">
+      <div className="px-8 py-5 print:px-6 print:py-4">
         <ResumeSection title={labels.professionalSummary}>
           <p className="text-[#1e293b] text-[14px] leading-[1.75] font-bold">
             {emphasizeTerms(summary, emphasisTerms)}
           </p>
         </ResumeSection>
 
-        <div className="grid md:grid-cols-[1fr_248px] gap-8 print:gap-6">
+        <div className="grid md:grid-cols-[1fr_248px] gap-6 print:gap-5">
           <div className="min-w-0 space-y-1">
             <ResumeSection title={labels.professionalExperience}>
               {experience.map((job) => (
-                <div key={job.role} className="mb-5 last:mb-0 pb-4 last:pb-0 border-b border-[#e2e8f0] last:border-b-0">
+                <div key={job.role} className="mb-3 last:mb-0 pb-3 last:pb-0 border-b border-[#e2e8f0] last:border-b-0">
                   <div className="flex flex-wrap justify-between items-start gap-x-3 gap-y-1 mb-1">
                     <h3 className="font-black text-[#0f172a] text-[15px] leading-snug">{job.role}</h3>
                     <span className="text-[11.5px] text-[#0f172a] font-black whitespace-nowrap">{job.period}</span>

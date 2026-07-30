@@ -2,12 +2,12 @@ import html2pdf from "html2pdf.js";
 import { CV } from "@/config/profile";
 
 const pdfOptions = {
-  margin: [8, 8, 8, 8],
+  margin: [6, 8, 6, 8],
   filename: CV.fileName,
   image: { type: "jpeg", quality: 0.98 },
-  html2canvas: { scale: 2, useCORS: true, logging: false },
+  html2canvas: { scale: 2, useCORS: true, logging: false, scrollY: 0 },
   jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-  pagebreak: { mode: ["avoid-all", "css", "legacy"] },
+  pagebreak: { mode: ["css", "legacy"], avoid: ["img"] },
 };
 
 async function cvFileExists(): Promise<boolean> {
