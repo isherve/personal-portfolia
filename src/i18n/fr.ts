@@ -140,10 +140,10 @@ export const fr: PortfolioContent = {
     title: "Développeur Full-Stack | React · TypeScript · Django · Spring Boot · Flutter · IA",
     tagline: "Je développe des applications web et mobiles full-stack prêtes pour la production qui résolvent de vrais problèmes métier.",
     roleLine:
-      "Licencié en IT | Développeur Full-Stack | React · Django · Spring Boot · Flutter · Node.js · IA",
+      "Titulaire d'une Licence en Technologies de l'Information (B.Sc. IT) | Développeur Full-Stack | React · Django · Spring Boot · Flutter · Node.js · IA",
   },
   summary:
-    "Développeur Full-Stack et diplômé en Technologies de l'Information avec une expérience de production en React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js et IA/ML. Conception et déploiement de co-pilotes IA pour cliniques, plateformes santé avec triage IA, systèmes QR de contrôle campus, outils de match-day football, télémédecine, inventaire, tableaux de bord IT, facturation IoT et applications mobiles IA. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
+    "Développeur Full-Stack titulaire d'une Licence en Technologies de l'Information (B.Sc. IT) avec une expérience de production en React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js et IA/ML. Expérience en systèmes de santé, applications web et mobiles full-stack, et support IT en entreprise. Solide discipline de débogage et de livraison grâce à un an au Ministère de la Santé. Certifié Cisco, Microsoft et freeCodeCamp. Recherche un poste de Développeur Full-Stack pour livrer des logiciels évolutifs et maintenables.",
   aboutContent: {
     headline: "Développeur logiciel d'applications prêtes pour la production",
     paragraphs: [
@@ -152,7 +152,7 @@ export const fr: PortfolioContent = {
       "Un stage d'un an au Ministère de la Santé m'a donné une discipline d'entreprise : déboguer sous pression, maintenir des systèmes fiables et traiter les données avec soin. Certifié Cisco, Microsoft et freeCodeCamp, je suis prêt à contribuer comme Développeur Full-Stack.",
     ],
     highlights: [
-      { key: "education", value: "Licence en Technologies de l'Information", detail: "Université du Rwanda · Diplômé Oct 2026" },
+      { key: "education", value: "Licence en Technologies de l'Information (B.Sc. IT)", detail: "Université du Rwanda · Terminé Oct 2026" },
       { key: "experience", value: "Stagiaire IT", detail: "Ministère de la Santé · 1 an" },
       { key: "location", value: "Kigali, Rwanda", detail: "Ouvert au télétravail et sur site" },
     ],
@@ -174,12 +174,12 @@ export const fr: PortfolioContent = {
   ],
   education: [
     {
-      degree: "Licence en Sciences — Technologies de l'Information",
+      degree: "Licence en Sciences — Technologies de l'Information (B.Sc. IT)",
       institution: "Université du Rwanda",
       location: "Kigali, Rwanda",
       period: "Juin 2022 – Oct 2026",
       detail:
-        "Cours pertinents : génie logiciel, bases de données, réseaux informatiques, cybersécurité et conception de systèmes. Diplômé en octobre 2026.",
+        "Diplôme obtenu en octobre 2026. Cours pertinents : génie logiciel, bases de données, réseaux informatiques, cybersécurité et conception de systèmes.",
     },
     {
       degree: "Diplôme A2 — Mathématiques, Informatique & Économie",

@@ -7,6 +7,7 @@ export const personal = {
 
 export const social = {
   github: "https://github.com/isherve",
+  portfolio: "https://isherve.github.io/personal-portfolia/",
   linkedin: "",
 } as const;
 

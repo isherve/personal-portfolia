@@ -140,10 +140,10 @@ export const en: PortfolioContent = {
     title: "Full-Stack Developer | React · TypeScript · Django · Spring Boot · Flutter · AI",
     tagline: "I build production-ready full-stack web and mobile applications that solve real business problems.",
     roleLine:
-      "B.Sc. IT Graduate | Full-Stack Developer | React · Django · Spring Boot · Flutter · Node.js · AI",
+      "Holder of B.Sc. in Information Technology | Full-Stack Developer | React · Django · Spring Boot · Flutter · Node.js · AI",
   },
   summary:
-    "Full-Stack Developer and B.Sc. Information Technology graduate with production experience in React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js, and AI/ML. Built and deployed clinic AI co-pilots, healthcare platforms with AI triage, campus QR gate systems, national football match-day tools, telemedicine, inventory management, IT analytics dashboards, IoT billing, and AI-powered mobile applications. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
+    "Full-Stack Developer holding a B.Sc. in Information Technology with production experience in React, TypeScript, Django, Spring Boot, Flutter, PHP, Node.js, and AI/ML. Experienced in healthcare systems, full-stack web and mobile applications, and enterprise IT support. Strong debugging and delivery discipline from one year at the Ministry of Health. Certified by Cisco, Microsoft, and freeCodeCamp. Seeking a Full-Stack Developer role to deliver scalable, maintainable software.",
   aboutContent: {
     headline: "Software Developer Building Production-Ready Applications",
     paragraphs: [
@@ -152,7 +152,7 @@ export const en: PortfolioContent = {
       "A one-year internship at the Ministry of Health gave me enterprise discipline: debugging under pressure, maintaining reliable systems, and handling data with care. I hold certifications from Cisco, Microsoft, and freeCodeCamp, and I am ready to contribute as a Full-Stack Developer.",
     ],
     highlights: [
-      { key: "education", value: "B.Sc. Information Technology", detail: "University of Rwanda · Graduated Oct 2026" },
+      { key: "education", value: "B.Sc. in Information Technology", detail: "University of Rwanda · Completed Oct 2026" },
       { key: "experience", value: "IT Intern", detail: "Ministry of Health · 1 year" },
       { key: "location", value: "Kigali, Rwanda", detail: "Open to remote and on-site opportunities" },
     ],
@@ -174,12 +174,12 @@ export const en: PortfolioContent = {
   ],
   education: [
     {
-      degree: "Bachelor of Science in Information Technology",
+      degree: "Bachelor of Science in Information Technology (B.Sc. IT)",
       institution: "University of Rwanda",
       location: "Kigali, Rwanda",
       period: "Jun 2022 – Oct 2026",
       detail:
-        "Relevant coursework: software engineering, databases, computer networks, cybersecurity, and systems design. Graduated October 2026.",
+        "Completed degree October 2026. Relevant coursework: software engineering, databases, computer networks, cybersecurity, and systems design.",
     },
     {
       degree: "A2 Diploma — Mathematics, Computer Science & Economics",

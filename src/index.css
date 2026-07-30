@@ -125,6 +125,12 @@
   }
 }
 
+/* Resume document — bold, clean typography for screen + PDF export */
+.resume-paper strong {
+  font-weight: 900;
+  color: #0f172a;
+}
+
 /* Resume print styles (hidden source — used when browser print is triggered) */
 @media print {
   body {
@@ -155,7 +161,12 @@
   }
 
   .resume-paper strong {
-    font-weight: 800 !important;
+    font-weight: 900 !important;
     color: #0f172a !important;
+  }
+
+  .resume-paper {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 }
