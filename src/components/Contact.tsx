@@ -7,6 +7,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Mail, Phone, MapPin, User } from "lucide-react";
 import { personal } from "@/data/portfolio";
 import { useLanguage } from "@/contexts/LanguageContext";
+import QuickLinks from "@/components/QuickLinks";
 
 const Contact = () => {
   const { content } = useLanguage();
@@ -132,7 +133,8 @@ const Contact = () => {
 
         <Card className="mt-16 bg-card border-border">
           <CardContent className="p-6">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid lg:grid-cols-[1fr_280px] gap-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="block text-sm font-medium">
@@ -199,7 +201,9 @@ const Contact = () => {
               >
                 {isSubmitting ? ui.sending : ui.send}
               </Button>
-            </form>
+              </form>
+              <QuickLinks />
+            </div>
           </CardContent>
         </Card>
       </div>

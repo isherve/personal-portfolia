@@ -9,6 +9,7 @@ export const fr: PortfolioContent = {
       certificates: "Certifications",
       projects: "Projets",
       contact: "Contact",
+      faq: "FAQ",
     },
     theme: {
       dark: "Mode sombre",
@@ -19,6 +20,7 @@ export const fr: PortfolioContent = {
     language: { switch: "Changer de langue" },
     hero: {
       badge: "Développeur Full-Stack",
+      availability: "Disponible pour des opportunités",
       headlinePart1: "Créer des applications web modernes ",
       headlineHighlight: "qui font la différence",
       roleKeywords: "Développeur Full-Stack | React · TypeScript · Django · Spring Boot · Flutter · IA",
@@ -35,6 +37,83 @@ export const fr: PortfolioContent = {
         { title: "Mobile & UI moderne", subtitle: "Flutter, Expo, TypeScript" },
         { title: "Outils & Workflow", subtitle: "Git, Docker, Linux, Maven" },
       ],
+    },
+    stats: {
+      items: [
+        { suffix: "+", label: "Projets réalisés", detail: "Dépôts personnels & travaux universitaires" },
+        { suffix: "+", label: "Projets phares", detail: "Déployés & orientés production" },
+        { suffix: "", label: "Certifications", detail: "Cisco, Microsoft, freeCodeCamp" },
+        { suffix: "+ an", label: "Expérience MoH", detail: "Stage IT au Ministère de la Santé" },
+      ],
+    },
+    principles: {
+      title: "Comment je construis des logiciels",
+      subtitle: "Principes que je suis pour concevoir des systèmes full-stack — de la santé aux outils sportifs nationaux.",
+      items: [
+        {
+          title: "Modéliser les données en premier",
+          description:
+            "Je commence par des entités claires, des rôles et des contrats d'API pour que le frontend reste prévisible et le backend maintenable.",
+        },
+        {
+          title: "Livrer avec la production en tête",
+          description:
+            "Authentification, validation, gestion d'erreurs et déploiement font partie du développement — pas des ajouts de dernière minute.",
+        },
+        {
+          title: "Privilégier une architecture simple",
+          description:
+            "Je choisis des stacks que l'équipe peut exploiter — React, Django, Spring Boot, SQLite/PostgreSQL — et je documente les décisions simplement.",
+        },
+        {
+          title: "Déboguer avec des preuves",
+          description:
+            "En cas de problème, je reproduis, lis les logs et les traces réseau, puis corrige la cause racine — compétence renforcée au Ministère de la Santé.",
+        },
+      ],
+    },
+    faq: {
+      title: "Avant de me contacter",
+      subtitle: "Réponses aux questions que recruteurs et collaborateurs posent le plus souvent.",
+      items: [
+        {
+          question: "Quelle est votre compétence technique la plus forte et où l'avez-vous appliquée ?",
+          answer:
+            "Le développement web full-stack avec React, TypeScript et Django/Spring Boot. J'ai livré des plateformes santé (Ubuzima Bwiza, Gara télémédecine), un système FERWAFA match-day, des outils d'inventaire, des tableaux de bord IT et des apps mobiles IA — chacun avec accès par rôles et déploiement réel.",
+        },
+        {
+          question: "Pouvez-vous gérer le frontend et le backend ?",
+          answer:
+            "Oui. Je développe des frontends React/TypeScript, des backends Django/Spring Boot/Node/PHP, des apps Flutter, et les connecte via API REST, JWT et bases PostgreSQL/MySQL/SQLite.",
+        },
+        {
+          question: "Quelle est votre expérience en IA et outils modernes ?",
+          answer:
+            "J'intègre l'IA pour l'assistance triage, la prédiction de prix (Random Forest) et les co-pilotes cliniques. J'utilise aussi Docker, Git, Supabase, Vite et des structures de projet adaptées à la CI.",
+        },
+        {
+          question: "Travaillez-vous en équipe ou en autonomie ?",
+          answer:
+            "Les deux. J'ai collaboré sur des projets universitaires (suite property management Dynamo) et livré des applications personnelles de bout en bout. Au Ministère de la Santé, j'ai soutenu des systèmes d'entreprise en équipe.",
+        },
+        {
+          question: "Êtes-vous disponible pour un CDI ou du freelance ?",
+          answer:
+            "Oui — ouvert aux postes de développeur full-stack et à des projets freelance sélectionnés. Basé à Kigali, Rwanda, ouvert au télétravail ou sur site.",
+        },
+        {
+          question: "Quels diplômes et certifications détenez-vous ?",
+          answer:
+            "Je suis titulaire d'une Licence en Technologies de l'Information (Université du Rwanda, terminé Oct 2026), avec certifications Cisco, Microsoft et freeCodeCamp en réseaux, C#, web responsive et fondamentaux IA.",
+        },
+      ],
+    },
+    quickLinks: {
+      title: "Liens rapides",
+      downloadCv: "Télécharger le CV",
+      github: "Profil GitHub",
+      portfolio: "Portfolio en ligne",
+      whatsapp: "WhatsApp",
     },
     about: {
       title: "À propos de moi",

@@ -21,6 +21,11 @@ const Hero = () => {
       <div className="section-container !py-12 md:!py-16 lg:!py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
           <div className="max-w-xl lg:max-w-2xl animate-fade-in">
+            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-[11px] sm:text-xs font-bold text-emerald-700 dark:text-emerald-300 mb-3">
+              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shrink-0" aria-hidden />
+              {hero.availability}
+            </span>
+
             <span className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-card/50 px-3.5 py-1.5 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-foreground/85 mb-5 sm:mb-6">
               <span className="h-1.5 w-1.5 rounded-full bg-primary shrink-0" aria-hidden />
               {hero.badge}

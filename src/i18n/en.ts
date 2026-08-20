@@ -9,6 +9,7 @@ export const en: PortfolioContent = {
       certificates: "Certificates",
       projects: "Projects",
       contact: "Contact",
+      faq: "FAQ",
     },
     theme: {
       dark: "Dark mode",
@@ -19,6 +20,7 @@ export const en: PortfolioContent = {
     language: { switch: "Switch language" },
     hero: {
       badge: "Full-Stack Developer",
+      availability: "Open to opportunities",
       headlinePart1: "Building Modern Web ",
       headlineHighlight: "Applications That Make a Difference",
       roleKeywords: "Full-Stack Developer | React · TypeScript · Django · Spring Boot · Flutter · AI",
@@ -35,6 +37,83 @@ export const en: PortfolioContent = {
         { title: "Mobile & Modern UI", subtitle: "Flutter, Expo, TypeScript" },
         { title: "Tools & Workflow", subtitle: "Git, Docker, Linux, Maven" },
       ],
+    },
+    stats: {
+      items: [
+        { suffix: "+", label: "Projects built", detail: "Personal repos & university work" },
+        { suffix: "+", label: "Featured builds", detail: "Deployed & production-minded" },
+        { suffix: "", label: "Certifications", detail: "Cisco, Microsoft, freeCodeCamp" },
+        { suffix: "+ yr", label: "MoH experience", detail: "Ministry of Health IT internship" },
+      ],
+    },
+    principles: {
+      title: "How I Build Software",
+      subtitle: "Principles I follow when designing full-stack systems — from healthcare platforms to national sports tools.",
+      items: [
+        {
+          title: "Design the data model first",
+          description:
+            "I start with clear entities, roles, and API contracts so the frontend stays predictable and the backend stays maintainable.",
+        },
+        {
+          title: "Ship with production in mind",
+          description:
+            "Authentication, validation, error handling, and deployment are part of the build — not afterthoughts once features are done.",
+        },
+        {
+          title: "Prefer clear, boring architecture",
+          description:
+            "I choose stacks and patterns the team can operate — React, Django, Spring Boot, SQLite/PostgreSQL — and document decisions simply.",
+        },
+        {
+          title: "Debug with evidence",
+          description:
+            "When something breaks, I reproduce the issue, read logs and network traces, and fix the root cause — skills sharpened at the Ministry of Health.",
+        },
+      ],
+    },
+    faq: {
+      title: "Before You Reach Out",
+      subtitle: "Answers to what recruiters and collaborators usually ask first.",
+      items: [
+        {
+          question: "What is your strongest technical skill and where have you applied it?",
+          answer:
+            "Full-stack web development with React, TypeScript, and Django/Spring Boot. I have shipped healthcare platforms (Ubuzima Bwiza, Gara telemedicine), a FERWAFA match-day system, inventory tools, IT dashboards, and AI-powered mobile apps — each with role-based access and real deployment.",
+        },
+        {
+          question: "Can you handle both frontend and backend development?",
+          answer:
+            "Yes. I build React and TypeScript frontends, Django/Spring Boot/Node/PHP backends, Flutter mobile apps, and connect them with REST APIs, JWT auth, and PostgreSQL/MySQL/SQLite databases.",
+        },
+        {
+          question: "What is your experience with AI and modern tooling?",
+          answer:
+            "I integrate AI for triage assistants, price prediction (Random Forest), and clinic co-pilot workflows. I also use Docker, Git, Supabase, Vite, and CI-friendly project structures.",
+        },
+        {
+          question: "Do you work with teams or independently?",
+          answer:
+            "Both. I have collaborated on university team projects (Dynamo property management suite) and delivered personal production apps end to end. At the Ministry of Health I supported enterprise systems in a structured team environment.",
+        },
+        {
+          question: "Are you available for full-time or freelance work?",
+          answer:
+            "Yes — I am open to full-stack developer roles and selected freelance projects. Based in Kigali, Rwanda, and open to remote or on-site opportunities.",
+        },
+        {
+          question: "What credentials and education do you hold?",
+          answer:
+            "I hold a B.Sc. in Information Technology from the University of Rwanda (completed Oct 2026), plus certifications from Cisco, Microsoft, and freeCodeCamp in networking, C#, responsive web design, and AI fundamentals.",
+        },
+      ],
+    },
+    quickLinks: {
+      title: "Quick Links",
+      downloadCv: "Download CV",
+      github: "GitHub Profile",
+      portfolio: "Live Portfolio",
+      whatsapp: "WhatsApp Me",
     },
     about: {
       title: "About Me",

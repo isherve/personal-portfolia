@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Github } from "lucide-react";
 import { social } from "@/data/portfolio";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useActiveSection } from "@/hooks/useActiveSection";
 import ThemeToggle from "@/components/ThemeToggle";
 import LanguageToggle from "@/components/LanguageToggle";
 import CvDownloadButton from "@/components/CvDownloadButton";
@@ -12,6 +13,18 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const { content } = useLanguage();
   const { nav, hero } = content.ui;
+
+  const navItems = [
+    { id: "home", label: nav.home },
+    { id: "about", label: nav.about },
+    { id: "skills", label: nav.skills },
+    { id: "certificates", label: nav.certificates },
+    { id: "projects", label: nav.projects },
+    { id: "faq", label: nav.faq },
+    { id: "contact", label: nav.contact },
+  ];
+
+  const activeSection = useActiveSection(navItems.map((item) => item.id));
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -23,15 +36,6 @@ const Header = () => {
     setIsMenuOpen(false);
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
-
-  const navItems = [
-    { id: "home", label: nav.home },
-    { id: "about", label: nav.about },
-    { id: "skills", label: nav.skills },
-    { id: "certificates", label: nav.certificates },
-    { id: "projects", label: nav.projects },
-    { id: "contact", label: nav.contact },
-  ];
 
   return (
     <header
@@ -52,9 +56,13 @@ const Header = () => {
           </span>
         </button>
 
-        <nav className="hidden lg:flex items-center gap-1 flex-1 justify-center">
+        <nav className="hidden lg:flex items-center gap-0.5 flex-1 justify-center">
           {navItems.map(({ id, label }) => (
-            <button key={id} onClick={() => scrollToSection(id)} className="nav-link">
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className={`nav-link ${activeSection === id ? "nav-link-active" : ""}`}
+            >
               {label}
             </button>
           ))}
@@ -113,7 +121,11 @@ const Header = () => {
           </div>
           <nav className="flex flex-col p-4 pt-2 space-y-3">
             {navItems.map(({ id, label }) => (
-              <button key={id} onClick={() => scrollToSection(id)} className="nav-link text-left">
+              <button
+                key={id}
+                onClick={() => scrollToSection(id)}
+                className={`nav-link text-left ${activeSection === id ? "nav-link-active" : ""}`}
+              >
                 {label}
               </button>
             ))}

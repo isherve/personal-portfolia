@@ -105,6 +105,14 @@
     @apply w-full;
   }
 
+  .nav-link-active {
+    @apply text-primary font-semibold;
+  }
+
+  .nav-link-active:after {
+    @apply w-full;
+  }
+
   .card-hover {
     @apply transition-all duration-300 hover:translate-y-[-8px] hover:shadow-lg hover:shadow-accent/10;
   }

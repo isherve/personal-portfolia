@@ -8,6 +8,7 @@ export interface PortfolioContent {
       skills: string;
       certificates: string;
       projects: string;
+      faq: string;
       contact: string;
     };
     theme: {
@@ -21,6 +22,7 @@ export interface PortfolioContent {
     };
     hero: {
       badge: string;
+      availability: string;
       headlinePart1: string;
       headlineHighlight: string;
       roleKeywords: string;
@@ -31,6 +33,26 @@ export interface PortfolioContent {
       contactMe: string;
       scrollAbout: string;
       features: Array<{ title: string; subtitle: string }>;
+    };
+    stats: {
+      items: Array<{ label: string; detail: string; suffix: string }>;
+    };
+    principles: {
+      title: string;
+      subtitle: string;
+      items: Array<{ title: string; description: string }>;
+    };
+    faq: {
+      title: string;
+      subtitle: string;
+      items: Array<{ question: string; answer: string }>;
+    };
+    quickLinks: {
+      title: string;
+      downloadCv: string;
+      github: string;
+      portfolio: string;
+      whatsapp: string;
     };
     about: {
       title: string;
