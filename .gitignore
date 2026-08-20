@@ -29,3 +29,6 @@ dist-ssr
 # Local image processing sources (keep hervin-profile.png + hervin-original.png)
 public/profile/hervin-profile-raw.png
 public/profile/hervin-profile-source.png
+
+# Unrelated local workspace project (not part of this portfolio site)
+green-rock-platform/
