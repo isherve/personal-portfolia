@@ -419,6 +419,56 @@ export const en: PortfolioContent = {
       status: "Featured",
     },
     {
+      repo: "green-rock-platform",
+      title: "Green Rock — Enterprise Management Platform",
+      organization: "Personal",
+      description:
+        "Unified enterprise platform for Green Rock General Supply Ltd — public website, customer portal, employee workspace, and admin ERP sharing one Express API, Prisma, and PostgreSQL database (Next.js, Redis, Docker).",
+      impact:
+        "Connects sales, staff, and operations in one system instead of separate tools for website, CRM, and back-office work.",
+      status: "Featured",
+    },
+    {
+      repo: "ResumeBuilderPro",
+      title: "ResumeBuilder Pro — AI CV Builder",
+      organization: "Personal",
+      description:
+        "Enterprise-grade resume builder for ATS-friendly CVs with AI writing help, secure accounts, Cloudinary storage, and PDF export — React, Vite, TypeScript frontend with Express, Prisma, PostgreSQL, and JWT auth.",
+      impact:
+        "Helps job seekers produce polished, consistent CVs faster with structured sections and AI-assisted wording.",
+      status: "Featured",
+    },
+    {
+      repo: "school-management-system",
+      title: "School Management System",
+      organization: "Personal",
+      description:
+        "School administration workspace for students, teachers, and staff — attendance, records, and academic operations in a web application.",
+      impact:
+        "Centralizes school records so administrators spend less time on paper-based follow-up.",
+      status: "In Development",
+    },
+    {
+      repo: "elearningcloudbasedplatform",
+      title: "Cloud-Based E-Learning Platform",
+      organization: "Personal",
+      description:
+        "Cloud e-learning platform for publishing courses, tracking learners, and delivering study materials online.",
+      impact:
+        "Makes course delivery reachable from any browser without installing a desktop classroom tool.",
+      status: "In Development",
+    },
+    {
+      repo: "sketchsync",
+      title: "SketchSync",
+      organization: "Personal",
+      description:
+        "Collaborative sketching workspace for sharing and syncing design sketches in the browser.",
+      impact:
+        "Supports fast visual collaboration when a team needs to sketch ideas together in real time.",
+      status: "In Development",
+    },
+    {
       repo: "bwiza-workbench",
       title: "Bwiza Workbench — Clinic AI Co-pilot",
       organization: "Personal",

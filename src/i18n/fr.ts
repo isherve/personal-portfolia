@@ -419,6 +419,56 @@ export const fr: PortfolioContent = {
       status: "Featured",
     },
     {
+      repo: "green-rock-platform",
+      title: "Green Rock — Plateforme de gestion d'entreprise",
+      organization: "Personal",
+      description:
+        "Plateforme d'entreprise unifiée pour Green Rock General Supply Ltd — site public, portail client, espace employé et ERP admin partageant une API Express, Prisma et PostgreSQL (Next.js, Redis, Docker).",
+      impact:
+        "Relie ventes, personnel et opérations dans un seul système au lieu d'outils séparés pour le site, le CRM et le back-office.",
+      status: "Featured",
+    },
+    {
+      repo: "ResumeBuilderPro",
+      title: "ResumeBuilder Pro — Créateur de CV IA",
+      organization: "Personal",
+      description:
+        "Créateur de CV de niveau entreprise, compatible ATS, avec aide à la rédaction par IA, comptes sécurisés, stockage Cloudinary et export PDF — frontend React/Vite/TypeScript et backend Express, Prisma, PostgreSQL, JWT.",
+      impact:
+        "Aide les candidats à produire des CV propres et cohérents plus rapidement grâce à des sections structurées et une rédaction assistée par IA.",
+      status: "Featured",
+    },
+    {
+      repo: "school-management-system",
+      title: "Système de gestion scolaire",
+      organization: "Personal",
+      description:
+        "Espace d'administration scolaire pour élèves, enseignants et personnel — présences, dossiers et opérations académiques dans une application web.",
+      impact:
+        "Centralise les dossiers de l'établissement pour réduire le suivi sur papier.",
+      status: "In Development",
+    },
+    {
+      repo: "elearningcloudbasedplatform",
+      title: "Plateforme e-learning cloud",
+      organization: "Personal",
+      description:
+        "Plateforme d'apprentissage en ligne pour publier des cours, suivre les apprenants et diffuser les supports pédagogiques.",
+      impact:
+        "Rend les cours accessibles depuis n'importe quel navigateur, sans logiciel de classe à installer.",
+      status: "In Development",
+    },
+    {
+      repo: "sketchsync",
+      title: "SketchSync",
+      organization: "Personal",
+      description:
+        "Espace de croquis collaboratif pour partager et synchroniser des sketches dans le navigateur.",
+      impact:
+        "Soutient une collaboration visuelle rapide quand une équipe doit dessiner des idées ensemble en temps réel.",
+      status: "In Development",
+    },
+    {
       repo: "bwiza-workbench",
       title: "Bwiza Workbench — Co-pilote IA clinique",
       organization: "Personal",
