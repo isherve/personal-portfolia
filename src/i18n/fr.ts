@@ -406,6 +406,16 @@ export const fr: PortfolioContent = {
         "Plateforme de santé complète avec tableaux de bord patient, médecin, hôpital et admin — rendez-vous, médicaments, dossiers, soins chroniques, messagerie et assistant IA pour le triage des symptômes et suggestions de spécialistes (React, TypeScript, Vite).",
       impact:
         "Offre une expérience santé digitale de bout en bout avec workflows par rôles et triage assisté par IA pour patients et soignants.",
+      status: "Live",
+    },
+    {
+      repo: "green-rock-website",
+      title: "Green Rock General Supply — Plateforme d'entreprise",
+      organization: "Personal",
+      description:
+        "Site web d'entreprise pour Green Rock General Supply Ltd — immobilier, construction et matériaux de construction — avec site public plus portails client, employé et admin (Next.js, Express, PostgreSQL, Prisma, JWT).",
+      impact:
+        "Donne à un fournisseur rwandais une présence digitale complète et des portails d'exploitation internes dans une stack TypeScript.",
       status: "Featured",
     },
     {

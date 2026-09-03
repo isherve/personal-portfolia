@@ -406,6 +406,16 @@ export const en: PortfolioContent = {
         "Full healthcare platform with patient, doctor, hospital, and admin dashboards — appointments, medications, records, chronic care, messaging, and an AI health assistant for symptom triage and specialist booking suggestions (React, TypeScript, Vite).",
       impact:
         "Delivers an end-to-end digital health experience with role-based workflows and AI-assisted triage for patients and providers.",
+      status: "Live",
+    },
+    {
+      repo: "green-rock-website",
+      title: "Green Rock General Supply — Corporate Platform",
+      organization: "Personal",
+      description:
+        "Production-ready corporate website for Green Rock General Supply Ltd covering real estate, construction, and building materials — with public site plus customer, employee, and admin portals (Next.js, Express, PostgreSQL, Prisma, JWT).",
+      impact:
+        "Gives a Rwandan supplier a full digital presence and internal operations portals in one TypeScript stack.",
       status: "Featured",
     },
     {
